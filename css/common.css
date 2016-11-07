@@ -1,7 +1,15 @@
 @charset "utf-8";
 
 /* Infomind Default CSS : Last Update : 2016-11-04 */
-* {  box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+
+
+}
+
+*:focus {
+    outline:none;
+}
 
 /*font*/
 
@@ -11,6 +19,16 @@ html {
 body {
     font-family: "Malgun Gothic", 맑은고딕, sans-serif;
     color: #333;
+}
+
+a {
+    cursor:pointer;
+    text-decoration:none;
+    color:#555;
+}
+
+a:hover {
+    color:#333;
 }
 
 /*button*/
@@ -77,4 +95,469 @@ body {
 .btn.extra {
     background-color: #e2e2e2;
     color: #666;
+}
+
+/* default layout */
+
+.container {
+    width:980px;
+    position:relative;
+    margin:0 auto;
+}
+
+#header .util-wrap {
+    height:32px;
+    line-height:32px;
+    background:#efefef;
+}
+
+#header .util-wrap p {
+    margin:0;
+}
+
+#header .util-wrap p i {
+    color:#eea315;
+}
+
+#header .util-wrap .util-menu {
+    position:absolute;
+    right:0;
+    top:0;
+    margin:0;
+    font-size:0;
+
+}
+
+#header .util-menu li {
+    display:inline-block;
+    overflow:hidden;
+}
+
+#header .util-menu li a {
+    font-size:1rem;
+    display:block;
+    position:relative;
+    padding:0 10px;
+}
+
+#header .util-menu li a::before {
+    content:"|";
+    font-size:12px;
+    display:block;
+    position:absolute;
+    left:-1px;
+    top:-1px;
+    color:#bbb;
+}
+
+#header .util-menu li:first-child a::before,
+#header .util-menu li a.sns::before {
+    content:"";
+}
+
+#header .util-menu li a.sns {
+    padding:0;
+    width:32px;
+    height:32px;
+    font-size:0;
+    color:transparent;
+    background:#333;
+}
+
+#header .util-menu li a.sns.twitter {
+    background:url('../images/icon-sns.png') no-repeat #53acf0 left top;
+}
+
+#header .util-menu li a.sns.facebook {
+    background:url('../images/icon-sns.png') no-repeat #3a5898 right top;
+}
+
+
+
+#header .top {
+    height:100px;
+    overflow:hidden;
+}
+
+#header h1 {
+    display:block;
+    width:194px;
+    height:64px;
+    margin-top:16px;
+    font-size:0;
+    color:transparent;
+    background:url('../images/logo.png') no-repeat center;
+}
+
+#header .search {
+    position:absolute;
+    left:340px;
+    top:28px;
+    border:1px solid #f15e0e;
+    width:360px;
+    height:46px;
+    border-radius:23px;
+    font-size:0;
+    padding:0;
+    overflow:hidden;
+}
+
+#header .search input,
+#header .search button {
+    height:100%;
+    border:none;
+    background:#fff;
+    vertical-align:top;
+}
+
+#header .search input {
+    width:320px;
+    padding:0 16px;
+    font-size:18px;
+    font-weight:600;
+
+}
+
+#header .search button i {
+    font-size:20px;
+    color:#f15e0e;
+}
+
+#header .top-banner {
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+#header .top-banner h2 {
+    font-size:14px;
+    margin:10px 0 8px;
+}
+
+#header .top-banner a {
+    display:inline-block;
+    width:60px;
+    height:60px;
+    line-height:60px;
+    text-align:center;
+    background:#f15e0e;
+    border-radius:50%;
+    color:#fff;
+}
+#header .top-banner a:hover  {
+    background:#333;
+}
+
+#menu {
+    height:44px;
+    border-bottom:1px solid #eee;
+    overflow:visible;
+}
+
+#menu .container {
+    background:#f15e0e;
+    height:44px;
+    bottom:0;
+    font-size:0;
+
+}
+
+#menu button.all-menu {
+    display:inline-block;
+    width:52px;
+    height:44px;
+    background:#333;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+}
+
+#menu button.all-menu i {
+    font-size:26px;
+}
+#menu .menu-set {
+    display:inline-block;
+    width:calc(100% - 52px);
+    background:url('../images/bg-menu.png') no-repeat center;
+    vertical-align:top;
+    padding:0;
+    text-align:center;
+}
+
+#menu .menu-set>li {
+    display:inline-block;
+
+}
+
+#menu .menu-set h2 a {
+    display:block;
+    font-size:16px;
+    height:44px;
+    line-height:44px;
+    color:#fff;
+    padding:0 10px;
+    margin:0 10px;
+}
+
+#menu .menu-set.on {
+    position:relative;
+    z-index:999;
+    background:none;
+    height:auto;
+    border:3px solid #f15e0e;
+    background:#fff;
+}
+
+#menu .menu-set.on>li  {
+    border-left:1px solid #eee;
+}
+
+#menu .menu-set.on>li:first-child {
+    border:none;
+}
+
+#menu .menu-set.on h2 a {
+    color:#333;
+
+
+}
+#menu .menu-set.on div {
+    font-size:1rem;
+    text-align:left;
+    margin-bottom:20px;
+}
+#menu .menu-set.on div ul {
+    padding:0;
+}
+
+#menu .menu-set.on div li {
+    list-style:none;
+    padding:6px 15px;
+}
+
+#menu .menu-set.on div li a.active,
+#menu .menu-set.on div li a:hover {
+    color:#f15e0e;
+    text-decoration:underline;
+    font-weight:600;
+}
+
+#content.main section.notice {
+    position:relative;
+    padding:10px 0;
+}
+
+#content.main section.notice h2 {
+    margin:0;
+    font-size:12px;
+}
+
+#content.main section.notice h2 small {
+    position:relative;
+    font-size:1em;
+    font-weight:400;
+    margin-left:10px;
+}
+
+#content.main section.notice h2 small::before {
+    content:"|";
+    display:block;
+    position:absolute;
+    left:-7px;
+    top:0;
+    color:#ccc;
+}
+
+#content.main section.notice h2.notice {
+    position:absolute;
+    right:0;
+    top:10px;
+}
+
+#content.main section.main-issue {
+    font-size:0;
+}
+
+#content.main section.main-issue .banner {
+    display:inline-block;
+    width:626px;
+    height:352px;
+    position:relative;
+
+}
+
+#content.main section.main-issue ul {
+    padding:0;
+    margin:0;
+
+}
+#content.main section.main-issue li {
+    list-style:none;
+}
+
+#content.main section.main-issue .banner .banner-pager {
+    position:absolute;
+    left:0;
+    bottom:0;
+    background:rgba(0,0,0,0.6);
+    width:100%;
+    height:36px;
+}
+
+#content.main section.main-issue .banner .banner-pager a {
+    display:inline-block;
+    font-size:1rem;
+    line-height:36px;
+    color:#fff;
+    width:calc(100% / 5);
+    text-align:center;
+    border-left:1px solid rgba(0,0,0,0.4);
+    padding:0 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#content.main section.main-issue .banner .banner-pager a:first-of-type {
+    border-left:none;
+}
+
+#content.main section.main-issue .banner .banner-pager a.active {
+    background:rgba(0,0,0,0.8);
+}
+
+#content.main section.main-issue .s-banner {
+    display:inline-block;
+    vertical-align:top;
+    width:354px;
+}
+#content.main section.main-issue .s-banner li {
+    font-size:1rem;
+    display:inline-block;
+    position:relative;
+    vertical-align:top;
+    width:177px;
+    height:176px;
+}
+
+#content.main section.main-issue .s-banner li:first-child {
+    border-top:1px solid #eee;
+}
+
+#content.main section.main-issue .s-banner li:last-child {
+    border:1px solid #eee;
+    border-top:none;
+    border-left:none;
+}
+
+#content.main section.main-issue .mini-banner .bx-pager {
+    position:absolute;
+    text-align:center;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+#content.main section.main-issue .mini-banner .bx-pager div {
+    display:inline-block;
+}
+
+#content.main section.main-issue .mini-banner .bx-pager div a {
+    display:block;
+    font-size:0;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.5);
+    margin:10px 2px;
+}
+
+#content.main section.main-issue .mini-banner .bx-pager div a.active {
+    background:rgba(255,255,255,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer#footer {
+    position:relative;
+    background:#f8f8f8;
+    padding-bottom:20px;
+    border-top:1px solid #999;
+}
+
+footer#footer .footer-link {
+    width:100%;
+    display:inline-block;
+    margin:20px 0 10px;
+    padding:0;
+}
+footer#footer .footer-link li {
+    display:block;
+    float:left;
+    position:relative;
+    padding-right:20px;
+    font-weight:600;
+}
+
+footer#footer .footer-link li a {
+    color:#333;
+}
+
+footer#footer .footer-link li a::after {
+    content:"|";
+    position:absolute;
+    right:10px;
+    color:#ccc;
+}
+
+footer#footer .footer-link li:last-child a::after {
+    content:"";
+}
+
+footer#footer address {
+    font-size:12px;
+    color:#555;
+    font-style:normal;
+}
+
+footer#footer address p {
+    margin:0 0 4px;
+}
+
+footer#footer .footer-banner {
+    position:absolute;
+    right:0;
+    top:20px;
+    margin:0;
+}
+
+footer#footer .footer-banner li {
+    display:inline-block;
+    vertical-align:top;
+    margin-left:10px;
 }

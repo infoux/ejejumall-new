@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Default</title>
+    <title>이제주몰</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
     <!-- javaScript  -->
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/common.js"></script>
 </head>
 
@@ -25,66 +26,181 @@
     <!-- E:skip_navi -->
     <!-- S:header -->
     <header id="header">
-        <div class="util_wrap">
-            <ul class="util_menu">
-                <li><a href="">회원가입</a></li>
-                <li><a href="">사이트맵</a></li>
-            </ul>
+        <div class="util-wrap">
+            <div class="container">
+                <p class="favorite"><a herf="#"><i class="fa fa-star" aria-hidden="true"></i> 즐겨찾기에 추가</a></p>
+                <ul class="util-menu">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="">고객센터</a></li>
+                    <li><a href="">장바구니</a></li>
+                    <li><a class="sns twitter" title="새창" target="_blank" href="">트위터</a></li>
+                    <li><a class="sns facebook" title="새창" target="_blank" href="">페이스북</a></li>
+                </ul>
+            </div>
         </div>
-        <h1>Logo</h1>
+        <div class="top container">
+            <h1>이제주몰</h1>
+            <fieldset class="search">
+                <legend class="sr-only"><label for="search-box">통합검색</label></legend>
+                <input id="search-box" type="text">
+                <button><i class="fa fa-search" aria-hidden="true"></i>검색</button>
+            </fieldset>
+            <div class="top-banner">
+                <h2>전시판매장안내</h2>
+                <a href="">본점</a>
+                <a href="">성산포</a>
+                <a href="">컨벤션</a>
+            </div>
+        </div>
         <!-- S:main_menu -->
-        <nav id="main_menu">
-
-            <!-- 메뉴유형 퍼블리셔 택1
-            <h2><a href="">소개</a></h2>
-            <h2><a href="">소개</a></h2>
-            <h2><a href="">소개</a></h2>
-            <h2><a href="">소개</a></h2>
-            <h2><a href="">소개</a></h2>
-          -->
-            <ul>
-                <li>
-                    <h2><a href="">소개</a></h2></li>
-                <li>
-                    <h2><a href="">메인1</a></h2></li>
-                <li>
-                    <h2><a href="">메인2</a></h2></li>
-                <li>
-                    <h2><a href="">메인3</a></h2></li>
-            </ul>
+        <nav id="menu">
+            <div class="container">
+                <button class="all-menu"><i class="fa fa-bars" aria-hidden="true"></i>전체상품보기</button>
+                <ul class="menu-set">
+                    <li>
+                        <h2><a href="">청정제주농산품</a></h2>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="">귤</a></li>
+                                <li><a href="">밀감</a></li>
+                                <li><a href="">감귤</a></li>
+                                <li><a href="">미깡</a></li>
+                                <li><a href="">만다린</a></li>
+                                <li><a href="">탄제린</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="">청정제주수산품</a></h2>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="">귤</a></li>
+                                <li><a href="">밀감</a></li>
+                                <li><a href="">감귤</a></li>
+                                <li><a href="">미깡</a></li>
+                                <li><a href="">만다린</a></li>
+                                <li><a href="">탄제린</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="">청정제주축산품</a></h2>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="">귤</a></li>
+                                <li><a href="">밀감</a></li>
+                                <li><a href="">감귤</a></li>
+                                <li><a href="">미깡</a></li>
+                                <li><a href="">만다린</a></li>
+                                <li><a href="">탄제린</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="">가공식품</a></h2>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="">귤</a></li>
+                                <li><a href="">밀감</a></li>
+                                <li><a href="">감귤</a></li>
+                                <li><a href="">미깡</a></li>
+                                <li><a href="">만다린</a></li>
+                                <li><a href="">탄제린</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="">향장품</a></h2>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="">귤</a></li>
+                                <li><a href="">밀감</a></li>
+                                <li><a href="">감귤</a></li>
+                                <li><a href="">미깡</a></li>
+                                <li><a href="">만다린</a></li>
+                                <li><a href="">탄제린</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="">공예/공산품</a></h2>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="">귤</a></li>
+                                <li><a href="">밀감</a></li>
+                                <li><a href="">감귤</a></li>
+                                <li><a href="">미깡</a></li>
+                                <li><a href="">만다린</a></li>
+                                <li><a href="">탄제린</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="">사회적기업</a></h2>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="">귤</a></li>
+                                <li><a href="">밀감</a></li>
+                                <li><a href="">감귤</a></li>
+                                <li><a href="">미깡</a></li>
+                                <li><a href="">만다린</a></li>
+                                <li><a href="">탄제린</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <!-- E:main_menu -->
     </header>
     <!-- E:header -->
     <!-- S:mainContent -->
-    <article id="mainContent">
-        <h3 class="sr-only">제목</h3>
-        <section class="">
-            <h4 class="sr-only">기본 버튼</h4>
-            <div class="btn-area">
-                <a class="btn btnS default" href="">버튼 <i class="fa fa-map-marker"></i></a>
-                <a class="btn btnS main" href="">버튼</a>
-                <a class="btn btnS sub" href="">버튼</a>
-                <a class="btn btnS extra" href="">버튼</a>
-            </div>
-            <div class="btn-area">
-                <a class="btn btnM default" href="">버튼</a>
-                <a class="btn btnM main" href="">버튼</a>
-                <a class="btn btnM sub" href="">버튼</a>
-                <a class="btn btnM extra" href="">버튼</a>
-            </div>
-            <div class="btn-area">
-                <a class="btn btnB default" href="">버튼</a>
-                <a class="btn btnB main" href="">버튼</a>
-                <a class="btn btnB sub" href="">버튼</a>
-                <a class="btn btnB extra" href="">버튼</a>
-            </div>
-            <div class="btn-area">
-                <a class="btn btnF main" href="">버튼</a>
-            </div>
+    <article id="content" class="main">
+        <h2 class="sr-only">메인컨텐츠</h2>
+        <section class="notice container">
+            <h2><a href="">업체홍보마당 <small>대한민국 최남단 모슬포수협</small></a></h2>
+            <h2 class="notice"><a href="">2017년 설연휴 배송에 대하여 안내 드립니다.</a></h2>
         </section>
-        <section class="">
-            <h4 class="sr-only">소제목</h4> 본문내용2
+        <section class="main-issue container">
+            <h2 class="sr-only">메인이슈 영역</h2>
+
+            <div class="banner">
+                <ul class="slide">
+                    <li><a href=""><img src="images/tmp-main-issue01.jpg" alt="오늘은 뭘 먹을까? 올가을 추천먹거리"></a></li>
+                    <li><a href=""><img src="images/tmp-main-issue01.jpg" alt="오늘은 뭘 먹을까? 올가을 추천먹거리"></a></li>
+                    <li><a href=""><img src="images/tmp-main-issue01.jpg" alt="오늘은 뭘 먹을까? 올가을 추천먹거리"></a></li>
+                    <li><a href=""><img src="images/tmp-main-issue01.jpg" alt="오늘은 뭘 먹을까? 올가을 추천먹거리"></a></li>
+                    <li><a href=""><img src="images/tmp-main-issue01.jpg" alt="오늘은 뭘 먹을까? 올가을 추천먹거리"></a></li>
+                </ul>
+                <div class="banner-pager">
+                    <a data-slide-index="0" href="">가을추천먹거리</a>
+                    <a data-slide-index="1" href="">메인배너2</a>
+                    <a data-slide-index="2" href="">메인배너3</a>
+                    <a data-slide-index="3" href="">메인배너4</a>
+                    <a data-slide-index="4" href="">메인배너5</a>
+                </div>
+            </div>
+
+            <div class="s-banner">
+                <ul>
+                    <li><a href="">asdf</a></li>
+                    <li><a href=""><img src="images/tmp-banner01.jpg" alt="풍요로운 설날 이제주몰과 함께 감사의 마음을 전하세요"></a></li>
+                    <li class="mini-banner">
+                        <ul>
+                            <li><a href=""><img src="images/tmp-banner02.jpg" alt="공예품 기획전 미니하르방"></a></li>
+                            <li><a href=""><img src="images/tmp-banner02.jpg" alt="공예품 기획전 미니하르방"></a></li>
+                            <li><a href=""><img src="images/tmp-banner02.jpg" alt="공예품 기획전 미니하르방"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">asdf</a></li>
+                </ul>
+            </div>
+
+
+
+
         </section>
         <section class="">
             <h4 class="sr-only">소제목</h4> 본문내용3
@@ -93,7 +209,26 @@
     <!-- E:mainContent -->
     <!-- S:footer -->
     <footer id="footer">
-        <address>주소</address>
+        <div class="container">
+            <ul class="footer-link">
+                <li><a href="">이용안내</a></li>
+                <li><a href="">배송/결제안내</a></li>
+                <li><a href="">개인정보취급방침</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">입점신청</a></li>
+            </ul>
+            <address>
+                <p>690-732 제주특별자치도 제주시 연람로 473(이도2동) 제주특별자치도 경제통상진흥원</p>
+                <p> 대표자 : 김진석 개인정보관리책임자 : 문준호 사업자등록번호 : 616-82-10556 <a href="" target="_blank" title="새창열림">사업자정보</a></p>
+                <p>통신판매업신고번호 : 제2003-제주이도2-31호 고객센터 : 064-751-3320</p>
+                <p>이메일 주소 무단수집을 거부합니다.</p>
+            </address>
+            <ul class="footer-banner">
+                <li><a href="" title="새창열림"><img src="images/mt_yellow_small.gif" alt="에스크로 안전거래 가입확인"></a></li>
+                <li><img src="images/qr.png" alt="모바일웹 QR코드"></li>
+                <li><a href=""><img src="images/jejum.png" alt="제주마씸관"></a></li>
+            </ul>
+        </div>
     </footer>
     <!-- E:footer -->
 </body>
