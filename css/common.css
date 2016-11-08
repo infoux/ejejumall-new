@@ -381,6 +381,14 @@ a:hover {
     font-weight:600;
 }
 
+#content.main section h2 {
+    position:relative;
+    font-size:28px;
+    font-weight:600;
+    margin:0 0 20px;
+}
+
+
 #content.main section.notice {
     position:relative;
     padding:10px 0;
@@ -413,8 +421,14 @@ a:hover {
     top:10px;
 }
 
+
+
 #content.main section.main-issue {
     font-size:0;
+}
+
+#content.main section.main-issue h2 {
+    margin:0;
 }
 
 #content.main section.main-issue .banner {
@@ -574,12 +588,6 @@ a:hover {
     background:rgba(255,255,255,1);
 }
 
-#content.main section h2 {
-    position:relative;
-    font-size:28px;
-    font-weight:600;
-    margin:0 0 20px;
-}
 
 #content.main section h2 small {
     position:absolute;
