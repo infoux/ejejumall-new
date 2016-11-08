@@ -47,4 +47,12 @@ $(document).ready(function() {
         $(this).parent().parent().find('ul').css('display', 'block');
     });
 
+    $('section.product .sort p a').on('click', function() {
+        $('section.product .sort p a').removeClass('active');
+        $(this).addClass('active');
+        $('section.product .container #list').removeClass();
+        $('section.product .container #list').addClass($(this).attr('data'));
+    });
+
+
 });
