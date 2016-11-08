@@ -10,7 +10,9 @@ $(document).ready(function() {
         pagerCustom: '.banner-pager',
         controls:false,
         infiniteLoop:true,
-        auto:true
+        auto:true,
+        speed:2000,
+        pause:6000
     });
 
     var minibanner = $('.main-issue .s-banner .mini-banner ul').bxSlider({
@@ -18,6 +20,28 @@ $(document).ready(function() {
         infiniteLoop:true,
         auto:true
     });
+
+    var miniproduct = $('.main-issue .s-banner .product ul').bxSlider({
+        pager:false,
+        infiniteLoop:true,
+        auto:true
+    });
+
+    $('.main-best button').hover(function() {
+        $(this).parent().parent().bind('click', false);
+    }, function(){
+        $(this).parent().parent().unbind('click', false);
+    });
+
+    $('.main-recommend .tabs a').on('click', function() {
+        var reValue = $(this).attr("data");
+        $(".main-recommend .tabs a").removeClass("active");
+        $(this).addClass("active");
+
+        $(".main-recommend .recommend-data").removeClass("active");
+        $(".main-recommend .recommend-data#" + reValue).addClass("active");
+    });
+
 
 
 });

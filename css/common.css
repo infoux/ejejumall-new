@@ -1,10 +1,49 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/NanumGothic-Bold.eot);
+    src: url(../fonts/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Bold.woff) format('woff'), url(../font/NanumGothic-Bold.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/NanumGothic-Regular.eot);
+    src: url(../fonts/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Regular.woff) format('woff'), url(../font/NanumGothic-Regular.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/NanumGothic-Light.eot);
+    src: url(../fonts/NanumGothic-Light.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Light.woff) format('woff'), url(../font/NanumGothic-Light.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 800;
+    src: url(../fonts/NanumGothic-ExtraBold.eot);
+    src: url(../fonts/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-ExtraBold.woff) format('woff'), url(../font/NanumGothic-ExtraBold.ttf) format('truetype')
+}
+
+
+
+
+
+
+
+
+
+
 /* Infomind Default CSS : Last Update : 2016-11-04 */
 * {
     box-sizing: border-box;
-
-
 }
 
 *:focus {
@@ -17,7 +56,7 @@ html {
     font-size: 14px;
 }
 body {
-    font-family: "Malgun Gothic", 맑은고딕, sans-serif;
+    font-family: "Nanum Gothic", 나눔고딕, sans-serif;
     color: #333;
 }
 
@@ -236,9 +275,9 @@ a:hover {
 
 #header .top-banner a {
     display:inline-block;
-    width:60px;
-    height:60px;
-    line-height:60px;
+    width:50px;
+    height:50px;
+    line-height:50px;
     text-align:center;
     background:#f15e0e;
     border-radius:50%;
@@ -440,11 +479,70 @@ a:hover {
     height:176px;
 }
 
-#content.main section.main-issue .s-banner li:first-child {
+#content.main section.main-issue li.product h3 {
+    position:absolute;
+    left:10px;
+    top:10px;
+    margin:0;
+    font-size:12px;
+}
+
+#content.main section.main-issue li.product a {
+    display:block;
+    height:100%;
+    text-align:center;
+}
+
+#content.main section.main-issue p {
+    margin:0;
+    padding:0 10px;
+    font-weight:600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#content.main section.main-issue p.images {
+    padding:28px 0 6px;
+}
+
+#content.main section.main-issue p.images img {
+    width:90px;
+    height:90px;
+}
+
+#content.main section.main-issue p.price {
+    padding-top:2px;
+    color:#cb3030;
+}
+
+#content.main section.main-issue li.product .bx-prev,
+#content.main section.main-issue li.product .bx-next {
+    display:block;
+    position:absolute;
+    width:8px;
+    height:15px;
+    background:url('../images/arrow-mini.png') no-repeat;
+    top:80px;
+    font-size:0;
+    color:transparent;
+}
+
+#content.main section.main-issue li.product .bx-prev {
+    background-position:left top;
+    left:6px;
+}
+
+#content.main section.main-issue li.product .bx-next {
+    background-position:right top;
+    right:6px;
+}
+
+#content.main section.main-issue .s-banner>ul>li:first-child {
     border-top:1px solid #eee;
 }
 
-#content.main section.main-issue .s-banner li:last-child {
+#content.main section.main-issue .s-banner>ul>li:last-child {
     border:1px solid #eee;
     border-top:none;
     border-left:none;
@@ -476,36 +574,557 @@ a:hover {
     background:rgba(255,255,255,1);
 }
 
+#content.main section h2 {
+    position:relative;
+    font-size:28px;
+    font-weight:600;
+    margin:0 0 20px;
+}
+
+#content.main section h2 small {
+    position:absolute;
+    right:0;
+    bottom:0;
+    font-weight:200;
+    font-size:0;
+}
+
+#content.main section h2 small i {
+    font-size:20px;
+    color:#aaa;
+}
+
+
+#content.main section.main-best,
+#content.main section.main-recommend,
+#content.main section.main-recopick,
+#content.main section.main-popular {
+    font-size:0;
+    margin-top:30px;
+}
+
+#content.main section.main-best ul {
+    padding:0;
+    margin:0;
+}
+
+#content.main section.main-best li {
+    display:inline-block;
+    position:relative;
+    list-style:none;
+    width:calc(100% / 3);
+    font-size:1rem;
+    height:318px;
+    vertical-align:top;
+}
+
+#content.main section.main-best li a {
+    display:block;
+
+    height:100%;
+    padding-bottom:20px;
+    border:1px solid #eee;
+    border-left:none;
+}
+
+#content.main section.main-best li:first-child a {
+    border-left:1px solid #eee
+}
+
+
+#content.main section.main-best li h3 {
+    display:block;
+    position:absolute;
+    margin:0;
+    left:0;
+    top:0;
+    background:#887042;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    color:#fff;
+    font-weight:400;
+}
+
+#content.main section.main-best li h3 strong {
+    font-size:22px;
+}
+
+
+#content.main section.main-best li p {
+    margin:0;
+    padding:0 20px 0;
+}
+
+
+#content.main section.main-best li p.images {
+    text-align:center;
+    padding:30px 0 10px;
+}
+
+#content.main section.main-best li p.images img {
+    width:190px;
+    height:190px;
+}
+
+#content.main section.main-best li p.name {
+    font-size:16px;
+    padding-bottom:4px;
+    color:#333;
+}
+
+#content.main section.main-best li p.company {
+    font-weight:600;
+    padding-bottom:6px;
+    color:#333;
+}
+
+#content.main section.main-best li p.price {
+    font-size:16px;
+    font-weight:600;
+    color:#cb3030;
+}
+
+#content.main section.main-best li p.price del {
+    font-size:14px;
+    font-weight:400;
+    color:#999;
+}
+
+
+#content.main section.main-best li div.btn-set {
+    display:none;
+}
+
+#content.main section.main-best li div.label {
+    position:absolute;
+    right:10px;
+    top:10px;
+    text-align:right;
+    line-height:1.6;
+    font-weight:600;
+    font-size:12px;
+    color:#cb3030;
+}
+
+#content.main section.main-best li div.label p {
+    padding:0;
+}
+
+#content.main section.main-best li div.label strong {
+    font-size:16px;
+}
 
 
 
+#content.main section.main-best li a:hover {
+    background:rgba(0,0,0,0.8);
+    border-color:transparent;
+}
+
+#content.main section.main-best li a:hover img {
+    position:relative;
+    z-index:-1;
+}
+
+#content.main section.main-best li a:hover h3 {
+    background:#000;
+}
+
+#content.main section.main-best li a:hover .label {
+    display:none;
+}
+
+#content.main section.main-best li a:hover .name {
+    display:inline-block;
+    position:absolute;
+    top:80px;
+    width:100%;
+    text-align:center;
+    color:#fff;
+}
+
+#content.main section.main-best li a:hover .company {
+    display:inline-block;
+    position:absolute;
+    top:104px;
+    width:100%;
+    text-align:center;
+    color:#fff;
+}
+
+#content.main section.main-best li a:hover .price {
+    display:inline-block;
+    position:absolute;
+    top:130px;
+    width:100%;
+    text-align:center;
+    color:#ffcc00;
+}
+
+#content.main section.main-best li a:hover .price del {
+    color:#fff;
+}
+
+#content.main section.main-best li a:hover .btn-set {
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    position:absolute;
+    bottom:100px;
+    font-size:0;
+}
+
+#content.main section.main-best li a .btn-set button {
+    border:none;
+    background:none;
+    position:relative;
+    color:#fff;
+    margin:0;
+    padding:0 10px;
+    font-size:16px;
+    cursor:zoom-in;
+}
+
+#content.main section.main-recommend .tabs {
+    font-size:0;
+    padding:0;
+    margin:0;
+    width:calc(100% + 1px);
+}
+
+#content.main section.main-recommend .tabs li {
+    display:inline-block;
+    position:relative;
+    width:calc(100% / 6);
+    font-size:1rem;
+}
+
+#content.main section.main-recommend .tabs a {
+    display:block;
+    height:100%;
+    border:1px solid #eee;
+    border-bottom:1px solid #333;
+    border-left:none;
+    text-align:center;
+    height:48px;
+    line-height:48px;
+}
+
+#content.main section.main-recommend .tabs li:first-child a {
+    border-left:1px solid #eee;
+}
+
+#content.main section.main-recommend .tabs a.active {
+    border:1px solid #333;
+    border-bottom:none;
+    font-weight:600;
+    color:#333;
+}
+
+#content.main section.main-recommend .tabs li:first-child a.active {
+    border-left:1px solid #333;
+}
+
+#content.main section.main-recommend .tabs a.active::after {
+    content:"";
+    display:block;
+    position:absolute;
+    width:50px;
+    height:3px;
+    left:50%;
+    bottom:0;
+    margin-left:-25px;
+    background:#33cccc;
+}
+
+#content.main section.main-recommend .recommend-data {
+    display:none;
+    border:1px solid #333;
+    border-top:none;
+    padding:20px 20px 6px;
+    line-height:1.4;
+}
+
+#content.main section.main-recommend .recommend-data.active {
+    display:block;
+}
+
+#content.main section.main-recommend .recommend-data div {
+    display:inline-block;
+    vertical-align:top;
+    font-size:1rem;
+    list-style:none;
+    margin-right:30px;
+}
+
+#content.main section.main-recommend .recommend-data ul {
+    display:inline-block;
+    width:758px;
+    padding:14px 0 0;
+    margin:0;
+}
+
+#content.main section.main-recommend .recommend-data li {
+    display:inline-block;
+    position:relative;
+    min-height:80px;
+    margin-bottom:30px;
+    font-size:1rem;
+    list-style:none;
+    padding:10px 0 0 20px;
+    width:calc(100% / 3);
+}
+
+#content.main section.main-recommend .recommend-data p {
+    margin:0;
+    color:#333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#content.main section.main-recommend .recommend-data .company {
+    font-weight:600;
+}
+
+#content.main section.main-recommend .recommend-data .price {
+    font-weight:600;
+    color:#cb3030;
+}
+
+#content.main section.main-recommend .recommend-data li p {
+    padding-left:90px;
+}
+
+#content.main section.main-recommend .recommend-data li p.images {
+    padding:0;
+    position:absolute;
+    top:0;
+    left:20px;
+}
+
+#content.main section.main-recopick>div {
+    font-size:1rem;
+    padding:10px;
+    border:5px solid #887042;
+    min-height:220px;
+}
+
+#content.main section.main-popular ul {
+    display:inline-block;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+#content.main section.main-popular li {
+
+    display:inline-block;
+    border:1px solid #eee;
+    width:calc((100% - 60px) / 4);
+    margin:0 20px 20px 0;
+    font-size:1rem;
+    padding-bottom:10px;
+}
+#content.main section.main-popular li:nth-child(4n) {
+    margin:0 0 20px 0;
+}
 
 
+#content.main section.main-popular .images {
+    height:180px;
+    overflow:hidden;
+    border-bottom:1px solid #eee;
+    margin-bottom:10px;
+    padding:0;
+}
 
 
+#content.main section.main-popular p {
+    margin:0;
+    line-height:1.4;
+    padding:0 10px;
+    color:#333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#content.main section.main-popular .images img {
+    width:228px;
+    height:228px;
+    margin-top:-24px;
+}
+
+#content.main section.main-popular p.name {
+    font-size:16px;
+}
+
+#content.main section.main-popular p.company {
+    font-weight:600;
+}
+
+#content.main section.main-popular p.price {
+    font-weight:600;
+    font-size:16px;
+    color:#cb3030;
+}
 
 
+#content.main section.main-customer {
+    background:#fafaf9;
+    margin:20px 0 10px;
+}
 
+#content.main section.main-customer h2 {
+    margin:0;
+}
 
+#content.main section.main-customer .container {
+    padding:20px 0 20px;
+    font-size:0;
+}
 
+#content.main section.main-customer .container>div {
+    display:inline-block;
+    vertical-align:top;
 
+    font-size:1rem;
+    padding:0 20px;
+}
 
+#content.main section.main-customer .customer {
+    padding-left:0;
+    width:30%;
+}
 
+#content.main section.main-customer .btn-set {
+    padding-right:0;
+    width:30%;
+}
 
+#content.main section.main-customer .notice {
+    width:40%;
+    border:1px solid #ccc;
+    border-top:none;
+    border-bottom:none;
+}
 
+#content.main section.main-customer h3 {
+    position:relative;
+    font-size:16px;
+    font-weight:600;
+    margin:10px 0 4px;
+}
 
+#content.main section.main-customer h3 strong {
+    display:block;
+    font-size:32px;
+    font-weight:800;
+    letter-spacing:-1px;
+    color:#f15e0e;
+    padding-top:4px;
+}
 
+#content.main section.main-customer h3 small {
+    display:block;
+    position:absolute;
+    right:0;
+    top:0;
+    font-size:12px;
+    color:#555;
+}
 
+#content.main section.main-customer h3 small i {color:#999;}
 
+#content.main section.main-customer p {
+    margin:0;
+    line-height:1.4;
+}
 
+#content.main section.main-customer p.small {
+    font-size:12px;
+    color:#3c0808;
 
+}
 
+#content.main section.main-customer ul {
+    margin:16px 0 0;
+    padding:0;
+}
+
+#content.main section.main-customer li {
+    list-style:none;
+    position:relative;
+    padding-bottom:8px;
+}
+
+#content.main section.main-customer li i {
+    position:absolute;
+    right:0;
+    font-style:normal;
+    color:#999;
+    font-size:12px;
+}
+
+#content.main section.main-customer .btn-set {
+    text-align:center;
+    font-size:0;
+
+}
+
+#content.main section.main-customer .btn-set a {
+    display:inline-block;
+    background:#333;
+    font-size:12px;
+    color:#fff;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    text-align:center;
+    margin:0 6px 10px 0;
+}
+
+#content.main section.main-customer .btn-set a:hover {
+    background:#f15e0e;
+}
+
+#content.main section.main-customer .btn-set a:nth-of-type(3n) {
+    margin:0;
+}
+
+#content.main section.main-customer .btn-set a i {
+    display:block;
+    font-size:26px;
+    margin:10px 0 4px;
+}
+
+section.foot-banner {
+    font-size:0;
+    margin-bottom:20px;
+}
+
+section.foot-banner h2 {
+    margin:0;
+}
+
+section.foot-banner ul {
+    padding:0;
+    margin:0;
+}
+
+section.foot-banner li {
+    display:inline-block;
+    width:calc(100% / 5);
+    text-align:center;
+}
 
 
 /*footer*/
 footer#footer {
     position:relative;
-    background:#f8f8f8;
     padding-bottom:20px;
     border-top:1px solid #999;
 }
@@ -530,6 +1149,7 @@ footer#footer .footer-link li a {
 
 footer#footer .footer-link li a::after {
     content:"|";
+    font-weight:400;
     position:absolute;
     right:10px;
     color:#ccc;
