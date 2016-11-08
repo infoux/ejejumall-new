@@ -50,9 +50,33 @@ $(document).ready(function() {
     $('section.product .sort p a').on('click', function() {
         $('section.product .sort p a').removeClass('active');
         $(this).addClass('active');
-        $('section.product .container #list').removeClass();
-        $('section.product .container #list').addClass($(this).attr('data'));
+        $('section.product #list').removeClass();
+        $('section.product #list').addClass($(this).attr('data'));
     });
 
+    $('div.select input').on('click', function() {
+        $('.info-text .select ul').css('display', 'none');
+        $(this).parent().find('ul').css('display','block');
 
+    });
+    $('div.select li a').on('click', function() {
+        $('.info-text .select ul').css('display', 'none');
+        $(this).parent().parent().parent().find('input').attr('value', $(this).text());
+
+    });
+
+    $('.stars button').on('click', function() {
+        var starValue = $(this).attr("data");
+         $(".stars button").find("i").removeClass("on");
+         $(".stars button").each(function() {
+             if ($(this).attr("data") <= starValue) {
+                 $(this).find("i").addClass("on");
+             }
+         });
+    });
+
+    $('.btn-area.comment button').on('click', function() {
+        $(this).parent().parent().find('.reply-write').css('display','block');
+
+    });
 });
