@@ -42,6 +42,9 @@ $(document).ready(function() {
         $(".main-recommend .recommend-data#" + reValue).addClass("active");
     });
 
-
+    $('.navigation p a').on('click', function() {
+        $('.navigation .category ul').css('display', 'none')
+        $(this).parent().parent().find('ul').css('display', 'block');
+    });
 
 });
