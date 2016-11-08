@@ -1130,6 +1130,87 @@ section.foot-banner li {
 }
 
 
+
+div.quick {
+    display:block;
+    position:fixed;
+    z-index:600;
+    left:calc(50% + 520px);
+    background:#fff;
+    top:210px;
+    margin:0;
+    width:80px;
+    height:auto;
+    border:1px solid #eee;
+    text-align:center;
+
+}
+
+
+div.quick h2 {
+    height:34px;
+    line-height:34px;
+    margin:0;
+    font-size:12px;
+    background:#333;
+    color:#fff;
+}
+
+div.quick p {
+    margin:0;
+}
+
+div.quick .btn-prev a,
+div.quick .btn-next a {
+    display:block;
+    font-size:0;
+    padding:4px 0;
+    background:#efefef;
+}
+div.quick .btn-prev i,
+div.quick .btn-next i {
+    font-size:14px;
+}
+div.quick ul {
+    margin:10px 0 0;
+    padding:0;
+}
+div.quick li {
+    margin-bottom:10px;
+    list-style:none;
+}
+div.quick img {
+    width:60px;
+    height:60px;
+}
+
+div.quick .cart a {
+    display:block;
+    padding:20px 0;
+}
+
+div.quick .cart i {
+    font-size:50px;
+    display:block;
+    color:#999;
+    margin-bottom:10px;
+}
+
+div.quick .cart strong {
+    font-weight:600;
+    color:#c83c3b;
+}
+
+div.quick .top a {
+    display:block;
+    background:#333;
+    color:#999;
+    height:34px;
+    line-height:34px;
+}
+
+
+
 /*footer*/
 footer#footer {
     position:relative;
