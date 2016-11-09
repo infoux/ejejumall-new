@@ -100,7 +100,7 @@ a:hover {
 /*button Size*/
 
 .btn.btnS {
-    padding: 8px 16px;
+    padding: 4px 16px;
 }
 .btn.btnM {
     padding: 12px 30px;
@@ -2048,6 +2048,136 @@ section.view-top .info-text {
 
 
 
+#content.sub .login-form .container {
+    width:800px;
+    margin:80px auto;
+}
+
+#content.sub .login-form .left {
+    width:388px;
+}
+
+#content.sub .login-tabs {
+    font-size:0;
+    padding:0;
+    margin:0;
+
+}
+#content.sub .login-tabs li {
+    display:inline-block;
+    font-size:16px;
+}
+
+#content.sub .login-tabs a {
+    display:block;
+    border:1px solid #eee;
+    border-bottom:1px solid #333;
+    background:#efefef;
+    color:#555;
+    border-left:none;
+    cursor:pointer;
+    width:194px;
+    height:46px;
+    line-height:46px;
+    text-align:center;
+}
+
+#content.sub .login-tabs li:first-child a {
+    border-left:1px solid #eee;
+}
+
+#content.sub .login-tabs a.active {
+    border-color:#333;
+    border-bottom:none;
+    background:#fff;
+    color:#333;
+    font-weight:600;
+}
+#content.sub .login-tabs li:first-child a.active {
+        border-color:#333;
+}
+
+#content.sub .login-tabs li:last-child a.active {
+        border-left:1px solid #333;
+}
+
+
+#content.sub .login-form .form {
+    display:none;
+    margin:20px 0 0;
+}
+
+#content.sub .login-form .form.active {
+    display:block;
+}
+
+#content.sub .login-form .form fieldset {
+    position:relative;
+    padding:30px 0 10px;
+    border:none;
+}
+
+#content.sub .login-form .form button {
+    display:block;
+    position:absolute;
+    border:none;
+    left:300px;
+    top:30px;
+    width:84px;
+    height:84px;
+    background:#fd9713;
+    font-weight:bold;
+    cursor:pointer;
+
+}
+
+#content.sub .login-form .form input[type="text"],
+#content.sub .login-form .form input[type="password"] {
+    display:block;
+    padding:0 10px;
+    width:290px;
+    height:40px;
+    margin-bottom:4px;
+}
+
+
+#content.sub .login-form .form input[type="checkbox"] {
+    margin-right:6px;
+    vertical-align:middle;
+}
+
+#content.sub .login-form .form input[type="checkbox"]+label {
+    display:inline-block;
+    padding:10px 0;
+    vertical-align:middle;
+}
+
+#content.sub .login-links {
+    border-top:1px solid #eee;
+    padding-top:10px;
+}
+
+#content.sub .login-links p {
+    position:relative;
+    padding:7px 0;
+    margin:0;
+    color:#555;
+    font-size:12px;
+}
+
+#content.sub .login-links a {
+    position:absolute;
+    right:0;
+}
+
+#content.sub .login-form .banner {
+    position:absolute;
+    right:0;
+    top:0;
+    border-left:1px solid #eee;
+    padding-left:50px;
+}
+
 
 
 
@@ -2108,7 +2238,7 @@ div.quick {
     background:#fff;
     top:210px;
     margin:0;
-    width:80px;
+    width:100px;
     height:auto;
     border:1px solid #eee;
     text-align:center;
@@ -2182,9 +2312,9 @@ div.side-banner {
     display:block;
     position:fixed;
     z-index:600;
-    left:calc(50% - 620px);
+    left:calc(50% + 520px);
     background:#fff;
-    top:210px;
+    top:620px;
     margin:0;
     width:100px;
     height:auto;

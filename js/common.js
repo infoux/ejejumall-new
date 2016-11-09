@@ -79,4 +79,14 @@ $(document).ready(function() {
         $(this).parent().parent().find('.reply-write').css('display','block');
 
     });
+
+
+    $('section.login-form .login-tabs a').on('click', function() {
+        var loginTab = $(this).attr("data");
+        $('section.login-form .login-tabs a').removeClass('active');
+        $(this).addClass('active');
+        $('section.login-form .form').removeClass('active');
+        $('section.login-form #'+ loginTab).addClass('active');
+    });
+
 });
