@@ -70,6 +70,34 @@ a:hover {
     color:#333;
 }
 
+
+
+/*input*/
+
+.ipt {
+    padding:6px 10px;
+}
+
+.ipt.default {
+    width:140px;
+}
+
+.ipt.withBtn {
+    width:calc(100% - 110px);
+}
+
+.ipt.full {
+    width:100%;
+}
+
+.ipt.tel {
+    width:80px;
+}
+
+.ipt.mail {
+    width:90px;
+}
+
 /*button*/
 
 .btn-area {
@@ -77,6 +105,11 @@ a:hover {
     width: 100%;
     padding: 10px 10px;
 }
+
+.btn-area.center {
+    text-align:center;
+}
+
 .btn {
     display: inline-block;
     text-decoration:none;
@@ -102,6 +135,7 @@ a:hover {
 .btn.btnS {
     padding: 4px 16px;
 }
+
 .btn.btnM {
     padding: 12px 30px;
     font-size: 16px;
@@ -136,6 +170,17 @@ a:hover {
     color: #666;
 }
 
+
+.btn.btnT {
+    padding: 7px 0;
+    border-radius:0;
+    width:110px;
+    vertical-align:top;
+    border-left:none;
+    border-color:#aaa;
+    background:#efefef;
+}
+
 /* default layout */
 
 .container {
@@ -145,6 +190,8 @@ a:hover {
 }
 
 #header .util-wrap {
+    display:inline-block;
+    width:100%;
     height:32px;
     line-height:32px;
     background:#efefef;
@@ -301,6 +348,10 @@ a:hover {
 
 }
 
+#menu ul {
+    list-style:none;
+}
+
 #menu button.all-menu {
     display:inline-block;
     width:52px;
@@ -325,6 +376,7 @@ a:hover {
 
 #menu .menu-set>li {
     display:inline-block;
+    list-style:none;
 
 }
 
@@ -2179,21 +2231,338 @@ section.view-top .info-text {
 }
 
 
+#content.sub .my-data .container {
+    border:1px solid #eee;
+    background:#efefef;
+    margin:0 auto 40px;
+    padding:20px;
+    text-align:center;
+}
+
+#content.sub .my-data h3 {
+    display:inline-block;
+    font-size:30px;
+    margin-right:50px;
+}
+#content.sub .my-data h3 strong {
+    color:#3366cc;
+}
+
+#content.sub .my-data .benefit {
+    display:inline-block;
+}
+
+#content.sub .my-data .benefit p.point,
+#content.sub .my-data .benefit p.coupon {
+    display:inline-block;
+    vertical-align:top;
+    background:#fff;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    text-align:center;
+    padding-top:30px;
+    font-size:16px;
+    margin-right:10px;
+}
+
+#content.sub .my-data .benefit p.coupon-link {
+    display:inline-block;
+}
+#content.sub .my-data .benefit a {
+    display:block;
+    background:#3366cc;
+    color:#fff;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    text-align:center;
+    padding-top:40px;
+    font-size:16px;
+}
+
+#content.sub .my-data .benefit p strong {
+    display:block;
+    font-weight:600;
+    padding-top:4px;
+    color:#3366cc;
+}
+
+#content.sub .my-order,
+#content.sub .discount,
+#content.sub .discount-more,
+#content.sub .total {
+    margin-bottom:40px;
+}
+
+#content.sub .order-table {
+    width:100%;
+    border-top:2px solid #333;
+    margin-top:20px;
+}
+
+#content.sub .order-table th {
+    background:#f4f4f4;
+}
+
+#content.sub .order-table th,
+#content.sub .order-table td {
+    position:relative;
+    border-bottom:1px solid #eee;
+    padding:14px;
+    vertical-align:middle;
+    text-align:center;
+}
+
+#content.sub .order-table h4 {
+    margin:0;
+}
+
+#content.sub .order-table td.images {
+    width:100px;
+}
+
+#content.sub .order-table td.images img {
+    width:80px;
+    height:80px;
+}
+
+#content.sub .order-table .name strong {
+    font-size:16px;
+    font-weight:600;
+    text-align:left;
+}
+
+#content.sub .order-table .sum {
+    font-weight:600;
+    color:#3366cc;
+}
+
+#content.sub .order-table .point {
+    color:#ff6600;
+}
+
+#content.sub .order-table p {
+    display:inline-block;
+    height:32px;
+    line-height:32px;
+    padding:0 10px;
+}
+
+#content.sub .order-table p strong {
+    font-weight:600;
+    color:#3366cc;
+}
+
+#content.sub .discount div.sum {
+    padding:20px;
+    background:#f9f9f9;
+    text-align:center;
+    font-size:18px;
+}
+
+#content.sub .discount div.sum p {
+    display:inline-block;
+}
+
+#content.sub .discount div.sum i {
+    margin:0 20px;
+}
+
+#content.sub .discount div.sum strong{
+    font-weight:600;
+    color:#dd2a2a;
+}
+
+#content.sub .discount-more input[type="text"] {
+    width:200px;
+    padding:6px;
+}
+
+#content.sub .discount-more button {
+    height:32px;
+    width:120px;
+    vertical-align:top;
+    padding:0 10px;
+    border-radius:0;
+    font-size:12px;
+    background:#f4f4f4;
+}
+
+#content.sub .discount-more input[type="checkbox"] {
+    margin-right:8px;
+    vertical-align:bottom;
+}
+
+#content.sub .discount-more input[type="checkbox"]:checked + label {
+    color:#3366cc;
+    font-weight:bold;
+}
+
+#content.sub .total table td {
+    position:relative;
+    padding:30px 0;
+}
+
+#content.sub .total table i {
+    font-size:30px;
+    position:absolute;
+    left:-15px;
+    top:28px;
+    color:#eee;
+}
+
+#content.sub .total table strong {
+    font-weight:800;
+    font-size:24px;
+}
+
+
+#content.sub .info-table ul {
+    margin:10px 0 0 0;
+    padding:0;
+    font-size:12px;
+}
+
+#content.sub .info-table li {
+    padding:0 0 6px 10px;
+    list-style:none;
+}
+
+#content.sub .info-table li:before {
+    content:"·";
+    padding-right:6px;
+}
+
+#content.sub .info-table strong {
+    color:#3366cc;
+}
+
+#content.sub .discount-more th {
+    width:120px;
+}
+
+#content.sub .discount-more td {
+    text-align:left;
+}
+
+#content.sub .total td:last-child {
+    color:#dd2a2a;
+}
+
+#content.sub .order-info {
+    background:#f4f4f4;
+    padding:20px 0;
+    font-size:0;
+
+}
+
+#content.sub .order-info .left,
+#content.sub .order-info .right {
+    display:inline-block;
+    background:#fff;
+    font-size:1rem;
+    width:calc(50% - 5px);
+    vertical-align:top;
+    padding:20px;
+    min-height:485px;
+}
+
+#content.sub .order-info .left {
+    margin-right:10px;
+}
+
+#content.sub .order-info h3 {
+    margin:0;
+
+}
+
+#content.sub .order-info h3 ul {
+    position:absolute;
+    right:20px;
+    top:20px;
+    margin:0;
+    font-size:14px;
+}
+
+#content.sub .order-info h3 li {
+    display:inline-block;
+}
+
+#content.sub .order-info h3 li input[type="checkbox"] {
+    margin-right:8px;
+    vertical-align:bottom;
+
+}
+
+#content.sub .order-info h3 li input[type="checkbox"] + label {
+    padding-right:10px;
+}
+
+#content.sub .order-info h3 li input[type="checkbox"]:checked + label {
+    color:#3366cc;
+    font-weight:bold;
+
+}
 
 
 
 
+#content.sub .order-info dl {
+    margin-top:40px;
+}
+
+
+#content.sub .order-info dt {
+    float:left;
+}
 
 
 
+#content.sub .order-info dd {
+    padding-left:80px;
+    margin-bottom:20px;
+}
+
+#content.sub .order-info p {
+    margin:0 0 6px;
+}
+
+#content.sub .order-info select {
+    padding:5px 0;
+}
+
+#content.sub .order-info textarea {
+    height:80px;
+}
+
+#content.sub .payment td {
+    text-align:left;
+}
 
 
 
+#content.sub .payment input[type="radio"] {
+    margin-right:8px;
+    vertical-align:bottom;
 
+}
 
+#content.sub .payment input[type="radio"] + label {
+    padding-right:10px;
+}
 
+#content.sub .payment input[type="radio"]:checked + label {
+    color:#3366cc;
+    font-weight:bold;
 
+}
 
+#content.sub .payment div {margin-top:10px;}
+
+#content.sub .payment select {
+    padding:5px 0;
+}
 
 
 
@@ -2332,7 +2701,6 @@ article.sub div.quick,
 article.sub div.side-banner {
     top:252px;
 }
-
 
 
 /*footer*/
