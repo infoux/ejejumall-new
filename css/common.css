@@ -54,6 +54,7 @@
 
 html {
     font-size: 14px;
+    min-width:980px;
 }
 body {
     font-family: "Nanum Gothic", 나눔고딕, sans-serif;
@@ -1175,7 +1176,7 @@ a:hover {
 }
 
 #content.sub .list-top h2 {
-    font-size:24px;
+    font-size:28px;
 }
 
 
@@ -2264,6 +2265,7 @@ section.view-top .info-text {
     padding-top:30px;
     font-size:16px;
     margin-right:10px;
+    border-bottom:5px solid #bbb;
 }
 
 #content.sub .my-data .benefit p.coupon-link {
@@ -2279,6 +2281,7 @@ section.view-top .info-text {
     text-align:center;
     padding-top:40px;
     font-size:16px;
+    border-bottom:5px solid #333;
 }
 
 #content.sub .my-data .benefit p strong {
@@ -2291,7 +2294,11 @@ section.view-top .info-text {
 #content.sub .my-order,
 #content.sub .discount,
 #content.sub .discount-more,
-#content.sub .total {
+#content.sub .total,
+#content.sub .order-list,
+#content.sub .my-order,
+#content.sub .inquiry-list
+ {
     margin-bottom:40px;
 }
 
@@ -2325,6 +2332,10 @@ section.view-top .info-text {
 #content.sub .order-table td.images img {
     width:80px;
     height:80px;
+}
+
+#content.sub .order-table td.title {
+    text-align:left;
 }
 
 #content.sub .order-table .name strong {
@@ -2565,9 +2576,244 @@ section.view-top .info-text {
 }
 
 
+aside#sidebar {
+    position:relative;
+    width:1px;
+    height:1px;
+    top:30px;
+    left:50%;
+    margin-left:-490px;
+}
+
+aside#sidebar .container {
+    position:absolute;
+    left:0;
+    top:0;
+    width:160px;
+}
+
+aside#sidebar h3 {
+    margin:0;
+    font-size:14px;
+    background:#333;
+    color:#fff;
+    font-weight:400;
+    padding:14px 0;
+    text-align:center;
+    margin:0;
+}
+
+aside#sidebar h3 strong {
+
+    padding-right:2px;
+    font-weight:600;
+}
+
+aside#sidebar dl {
+    display:inline-block;
+    width:100%;
+    border:1px solid #333;
+    border-top:none;
+    margin-top:0;
+    padding:10px;
+    line-height:1.8;
+}
+
+aside#sidebar dt {
+    float:left;
+}
+
+aside#sidebar dd {
+    text-align:right;
+
+}
+
+aside#sidebar dd strong {
+    font-weight:800;
+    color:#3366cc;
+}
+
+aside#sidebar ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+aside#sidebar ul h4 {
+    margin:0;
+}
+
+aside#sidebar ul h4 a {
+    display:inline-block;
+    position:relative;
+    width:100%;
+    margin:0;
+    border-bottom:1px solid #ccc;
+    padding:14px;
+    font-size:16px;
+    color:#333;
+}
+
+aside#sidebar ul h4 a::before {
+    content:"-";
+    display:block;
+    position:absolute;
+    left:0;
+}
+
+aside#sidebar ul ul {
+    background:#eee;
+    padding:10px;
+    line-height:1.6;
+}
 
 
 
+
+
+
+
+
+
+
+
+#content.sub .mypage-top {
+    margin:30px auto 0;
+    border-bottom:1px solid #999;
+}
+
+#content.sub .mypage-top h2 {
+    font-size:28px;
+}
+
+#content.sub .mypage-top h2 small {
+    font-weight:400;
+    font-size:12px;
+    color:#555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#content.sub .mypage-quick .container {
+    border:1px solid #eee;
+    background:#efefef;
+    margin:0 auto 40px;
+    padding:20px;
+    text-align:center;
+}
+
+#content.sub .mypage-quick h2 {
+    display:inline-block;
+    font-size:16px;
+    margin-right:50px;
+    text-align:left;
+    line-height:1.4;
+}
+#content.sub .mypage-quick h2 strong {
+    color:#3366cc;
+    display:block;
+    font-size:34px;
+}
+
+#content.sub .mypage-quick .links {
+    display:inline-block;
+}
+
+
+#content.sub .mypage-quick .links a {
+    display:inline-block;
+    background:#3366cc;
+    color:#fff;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    text-align:center;
+    padding-top:34px;
+    font-size:16px;
+    font-weight:600;
+    border-bottom:5px solid #333;
+}
+
+#content.sub .mypage-quick .links i {
+    font-size:12px;
+    display:block;
+    font-style:normal;
+    font-weight:400;
+    padding-top:10px;
+    color:#97b7f8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aside + article#content {
+    width:800px;
+    position:relative;
+    left:50%;
+    margin-left:-310px;
+}
+
+
+
+
+aside + article#content .container {
+    margin: 0;
+    width:100%;
+}
 
 
 
