@@ -1760,6 +1760,8 @@ section.view-top .info-text {
     border:1px solid #ccc;
     background:#fff;
     min-width:100%;
+    padding:0;
+    list-style:none;
 
 }
 
