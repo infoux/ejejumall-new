@@ -378,6 +378,7 @@ a:hover {
 #menu .menu-set>li {
     display:inline-block;
     list-style:none;
+    vertical-align:top;
 
 }
 
@@ -402,7 +403,13 @@ a:hover {
 
 #menu .menu-set.on>li  {
     border-left:1px solid #eee;
+    width:calc(100% / 7);
+    height:inherit;
+    min-height:270px;
+    vertical-align:top;
 }
+
+
 
 #menu .menu-set.on>li:first-child {
     border:none;
@@ -410,21 +417,28 @@ a:hover {
 
 #menu .menu-set.on h2 a {
     color:#333;
-
-
+    padding:0;
+    margin:0;
 }
+
 #menu .menu-set.on div {
     font-size:1rem;
     text-align:left;
     margin-bottom:20px;
+    width:100%;
 }
 #menu .menu-set.on div ul {
     padding:0;
+    width:100%;
 }
 
 #menu .menu-set.on div li {
     list-style:none;
+    width:100%;
     padding:6px 15px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
 }
 
 #menu .menu-set.on div li a.active,
