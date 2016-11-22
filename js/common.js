@@ -89,4 +89,13 @@ $(document).ready(function() {
         $('section.login-form #'+ loginTab).addClass('active');
     });
 
+
+	$('#pwModify').click(function(){
+		if(($('#pwModify').is(':checked')) == true){
+			$('.sign-table tr.hidden').show();
+		} else {
+			$('.sign-table tr.hidden').hide();
+		}
+	});
+
 });

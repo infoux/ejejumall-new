@@ -71,7 +71,25 @@ a:hover {
     color:#333;
 }
 
-
+.center{
+	text-align:center;
+}
+.blue{
+	color:#3366cc;
+}
+.red{
+	color:#dd2a2a;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 
 /*input*/
 
@@ -1182,6 +1200,7 @@ a:hover {
 
 #content.sub {
     margin-bottom:40px;
+	min-height:800px;
 }
 
 #content.sub .list-top {
@@ -2734,6 +2753,13 @@ aside#sidebar ul ul {
     text-align:left;
     line-height:1.4;
 }
+#content.sub .mypage-quick h2 small{
+	display:block;
+	font-weight:400;
+	font-size:12px;
+	color:#555;
+	margin-top:10px;
+}
 #content.sub .mypage-quick h2 strong {
     color:#3366cc;
     display:block;
@@ -2768,9 +2794,340 @@ aside#sidebar ul ul {
     color:#97b7f8;
 }
 
+#content.sub h2.sTitle{
+	padding:10px 0 15px;
+	border-bottom:1px solid #f4f4f4;
+	margin-bottom:20px;
+}
+#content.sub h2.sTitle small{
+	font-weight:400;
+	font-size:12px;
+	color:#555;
+}
+
+#content.sub .member-info p.center > strong{
+	color:#3366cc;
+}
+
+#content.sub .member-info dl {
+    margin-top:40px;
+}
+
+
+#content.sub .member-info dt {
+    float:left;
+}
 
 
 
+#content.sub .sign-top dd {
+    padding-left:80px;
+    margin-bottom:20px;
+}
+
+#content.sub .sign-top {
+    margin:30px auto 0;
+}
+
+#content.sub .sign-top h2 {
+    font-size:28px;
+}
+
+#content.sub .sign-top h2 small {
+    font-weight:400;
+    font-size:12px;
+    color:#555;
+}
+
+#content.sub .sign-notice{
+	width:980px;
+	margin:0 auto;
+	background:#efefef;
+	padding:10px 15px;
+}
+#content.sub .sign-notice strong{
+	color:#dd2a2a;
+	font-weight:bold;
+}
+#content.sub ul.list-type01{
+	padding:0;
+}
+#content.sub ul.list-type01 li{
+	padding:0 0 6px 10px;
+	list-style:none;
+}
+#content.sub ul.list-type01 li:before{
+	content:"·";
+	padding-right:6px;
+}
+#content.sub .sign-agree div.textarea{
+	min-height:200px;
+	background:#fff;
+	overflow-y:scroll;
+	line-height:1.4;
+	padding:15px;
+	border:1px solid #efefef;
+}
+#content.sub .agree-check{
+	padding:10px 0;
+	text-align:right;
+}
+#content.sub .sign-agree input[type="checkbox"],#content.sub .sign-agree input[type="radio"]{
+	vertical-align:-2px;
+}
+#content.sub .sign-agree input[type="checkbox"] + label,#content.sub .sign-agree input[type="radio"] + label{
+	padding-right:10px;
+}
+#content.sub .sign-agree input[type="checkbox"]#agree,#content.sub .agree-check input[type="checkbox"]#agree2{
+	margin-left:15px;
+}
+#content.sub .sign-agree input[type="checkbox"]:checked + label,#content.sub .sign-agree input[type="radio"]:checked + label{
+	color:#3366CC;
+	font-weight:bold;
+}
+#content.sub .sign-agree .certify{
+	padding:10px 15px;
+	background:#efefef;
+}
+#content.sub .sign-table {
+    width:100%;
+    border-top:2px solid #333;
+    margin-top:20px;
+}
+#content.sub .sign-table tr.hidden{
+	display:none;
+}
+
+#content.sub .sign-table th {
+    background:#f4f4f4;
+	width:140px;
+}
+#content.sub .sign-table th strong{
+	color:#dd2a2a;
+	font-weight:bold;
+	margin-left:3px;
+}
+
+#content.sub .sign-table th,
+#content.sub .sign-table td {
+    position:relative;
+    border-bottom:1px solid #eee;
+    padding:14px;
+    vertical-align:middle;
+    text-align:left;
+}
+#content.sub .sign-table td input[type="radio"],#content.sub .sign-table td input[type="checkbox"]{
+	vertical-align:-2px;
+	margin:0 2px;
+}
+#content.sub .sign-table td button.sub{
+	vertical-align:-1px;
+	margin-left:10px;
+}
+#content.sub .sign-table td span{
+	font-size:12px;
+	color:#555;
+}
+#content.sub .sign-table td span.agree{
+	display:block;
+	padding-top:10px;
+}
+#content.sub .sign-table td textarea{
+	padding:10px;
+	width:100%;
+	min-height:150px;
+}
+#content.sub .sign-table.finish span:before {
+    content:"·";
+}
+#content.sub .bank-info .bankNotice {
+    border:1px solid #eee;
+    background:#efefef;
+    margin:-20px auto 40px;
+    padding:5px 0;
+}
+#content.sub .bank-info .bankNotice ul li{
+	font-size:12px;
+	list-style:none;
+	line-height:1.4;
+	margin-bottom:5px;
+}
+#content.sub .bank-info .bankNotice ul li button{
+	margin-left:10px;
+}
+#content.sub .bank-info .bankNotice ul li:before{
+	content:"·";
+	padding-right:6px;
+}
+#content.sub .bank-table {
+    width:100%;
+    border-top:2px solid #333;
+    margin-top:20px;
+}
+
+#content.sub .bank-table th {
+    background:#f4f4f4;
+}
+#content.sub .bank-table th strong{
+	color:#dd2a2a;
+	font-weight:bold;
+	margin-left:3px;
+}
+
+#content.sub .bank-table th,
+#content.sub .bank-table td {
+    position:relative;
+    border-bottom:1px solid #eee;
+    padding:14px;
+    vertical-align:middle;
+    text-align:center;
+}
+
+#content.sub .bank-info .left-btnArea{
+	float:left;
+	display:inline-block;
+	margin:20px 0;
+}
+#content.sub .bank-info .right-btnArea{
+	float:right;
+	display:inline-block;
+	margin:20px 0;
+}
+
+#content.sub .address-info .addressNotice {
+    border:1px solid #eee;
+    background:#efefef;
+    margin:-20px auto 40px;
+    padding:5px 0;
+}
+#content.sub .address-info .addressNotice ul li{
+	font-size:12px;
+	list-style:none;
+	line-height:1.4;
+	margin-bottom:5px;
+}
+#content.sub .address-info .addressNotice ul li button{
+	margin-left:10px;
+}
+#content.sub .address-info .addressNotice ul li:before{
+	content:"·";
+	padding-right:6px;
+}
+#content.sub .address-table {
+    width:100%;
+    border-top:2px solid #333;
+    margin-top:20px;
+}
+
+#content.sub .address-table th {
+    background:#f4f4f4;
+}
+#content.sub .address-table th strong{
+	color:#dd2a2a;
+	font-weight:bold;
+	margin-left:3px;
+}
+
+#content.sub .address-table th,
+#content.sub .address-table td {
+    position:relative;
+    border-bottom:1px solid #eee;
+    padding:14px;
+    vertical-align:middle;
+    text-align:center;
+}
+
+#content.sub .address-info .left-btnArea{
+	float:left;
+	display:inline-block;
+	margin:20px 0;
+}
+#content.sub .address-info .right-btnArea{
+	float:right;
+	display:inline-block;
+	margin:20px 0;
+}
+#content.sub .signout-info .signoutNotice {
+    border:1px solid #eee;
+    background:#efefef;
+    margin:-20px auto 40px;
+    padding:5px 0;
+}
+#content.sub .signout-info .signoutNotice ul li{
+	font-size:12px;
+	list-style:none;
+	line-height:1.4;
+	margin-bottom:5px;
+}
+#content.sub .signout-info .signoutNotice ul li button{
+	margin-left:10px;
+}
+#content.sub .signout-info .signoutNotice ul li:before{
+	content:"·";
+	padding-right:6px;
+}
+#content.sub .signout-info .signoutNotice ul li p{
+	margin:0 0 0 11px;
+}
+#content.sub .signout-info .subNotice{
+	display:block;
+	width:100%;
+	padding:15px;
+	border-top:1px solid #f4f4f4;
+	border-bottom:1px solid #f4f4f4;
+}
+#content.sub .signout-info .subNotice h3{
+	font-weight:bold;
+}
+#content.sub .signout-info .reasonList{
+	position:relative;
+	display:block;
+	width:100%;
+	border:1px solid #f4f4f4;
+	border-top:1px solid #999;
+}
+#content.sub .signout-info .reasonList h3{
+	display:block;
+	font-size:14px;
+	padding:10px;
+	background:#efefef;
+	margin:0;
+}
+#content.sub .signout-info .reasonList ul{
+	width:500px;
+	padding:20px 0 20px 25px;
+	overflow:hidden;
+}
+#content.sub .signout-info .reasonList ul li{
+	float:left;
+	list-style:none;
+	width:230px;
+	margin-bottom:10px;
+}
+#content.sub .signout-info .reasonList ul li input[type="checkbox"]{
+	vertical-align:-2px;
+	margin-right:3px;
+}
+#content.sub .signout-info .reasonList ul li.etc{
+	position:absolute;
+	top:70px;
+	right:0;
+}
+#content.sub .signout-info .reasonList ul li.etc textarea{
+	display:block;
+	width:180px;
+	min-height:80px;
+	padding:10px;
+	margin-top:10px;
+}
+#content.sub .signout-info p.agree{
+	margin:30px 0 15px;
+	text-align:center;
+}
+#content.sub .signout-info p.agree input[type="checkbox"]{
+	vertical-align:-2px;
+	margin-right:15px;
+}
 
 
 
