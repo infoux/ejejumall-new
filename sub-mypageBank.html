@@ -156,6 +156,49 @@
         <!-- E:main_menu -->
     </header>
     <!-- E:header -->
+	<!-- S:popup -->
+	<section id="createPopup">
+		<div class="popContainer">
+			<h2>환불계좌관리</h2>
+			<table class="pop-table">
+				<tbody>
+					<tr>
+						<th><label for="account">계좌명</label></th>
+						<td>
+							<input type="text" id="account" class="ipt default" />
+							<input type="checkbox" id="primary" /><label for="primary">기본 계좌로 설정</label>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="bank">은행</label></th>
+						<td>
+							<select id="bank" class="ipt mail">
+								<option value="">선택</option>
+								<option value="1">농협</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="account-num">계좌번호</label></th>
+						<td><input type="text" id="account-num" class="ipt full"></td>
+					</tr>
+					<tr>
+						<th><label for="account-name">예금주</label></th>
+						<td>
+							<input type="text" id="account-name" class="ipt default">
+							<span>* 예금주 명은 회원명과 동일해야 하므로 입력 및 수정할 수 없습니다.</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="center">* 주의 : 고객 불찰로 인한 환불 사고 발생 시 그 책임은 고객님께 있습니다.</p>
+			<div class="btn-area center">
+				<a href="#" class="btn btnB sub">등록</a>
+				<a href="#" class="btn btnB default">창닫기</a>
+			</div>
+		</div>
+	</section>
+	<!-- E:popup -->
     <!-- S:mainContent -->
 
     <aside id="sidebar">
@@ -222,7 +265,7 @@
 					<ul>
 						<li>상품 주문 시 현금성 결제 수단(온라인입금, 가상계좌)으로 결제 후 취소 시 등록하신 환불계좌가 노출됩니다.</li>
 						<li>고객 불찰로 인한 환불 사고 시 그 책임은 고객님께 있으니 <strong class="blue">정확한 환불계좌</strong>정보를 입력해 주십시오.</li>
-						<li>기타 문의 사항은 고객센터에 문의 바랍니다.<button class="btn btnS sub">고객센터바로가기</button></li>
+						<li>기타 문의 사항은 고객센터에 문의 바랍니다.<button class="btn btnS default">고객센터바로가기</button></li>
 					</ul>
 				</div>
                 <h3>환불계좌목록</h3>
@@ -249,7 +292,7 @@
 					<button class="btn btnS default">기본 계좌로 설정</button>
 				</div>
 				<div class="right-btnArea">
-					<button class="btn btnS sub">환불계좌 등록</button>
+					<button class="btn btnS sub create">환불계좌 등록</button>
 				</div>
             </div>
         </section>

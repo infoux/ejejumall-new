@@ -156,64 +156,6 @@
         <!-- E:main_menu -->
     </header>
     <!-- E:header -->
-
-	<!-- S:popup -->
-	<section id="createPopup">
-		<div class="popContainer">
-			<h2>환불계좌관리</h2>
-			<table class="pop-table">
-				<tbody>
-					<tr>
-						<th><label for="address">주소명</label></th>
-						<td>
-							<input type="text" id="address" class="ipt default" />
-							<input type="checkbox" id="primary" /><label for="primary">기본 주소로 설정</label>
-						</td>
-					</tr>
-					<tr>
-						<th><label for="tel">전화번호</label></th>
-						<td>
-							<select id="tel" class="ipt tel">
-								<option value="">선택</option>
-								<option value="064">064</option>
-							</select>
-							-
-							<input type="text" class="ipt tel" />
-							-
-							<input type="text" class="ipt tel" />
-						</td>
-					</tr>
-					<tr>
-						<th><label for="mobile">전화번호</label></th>
-						<td>
-							<select id="mobile" class="ipt tel">
-								<option value="">선택</option>
-								<option value="010">010</option>
-							</select>
-							-
-							<input type="text" class="ipt tel" />
-							-
-							<input type="text" class="ipt tel" />
-						</td>
-					</tr>
-					<tr>
-						<th><label for="address-detail">주소</label></th>
-						<td>
-							<p><input type="text" id="address-detail" class="ipt withBtn"><button class="btn btnT default">우편번호찾기</button></p>
-							<p><input type="text" class="ipt full" /></p>
-							<p><input type="text" class="ipt full" /></p>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			<div class="btn-area center">
-				<a href="#" class="btn btnB sub">등록</a>
-				<a href="#" class="btn btnB default">창닫기</a>
-			</div>
-		</div>
-	</section>
-	<!-- E:popup -->
-
     <!-- S:mainContent -->
 
     <aside id="sidebar">
@@ -273,39 +215,182 @@
         <section class="mypage-top container">
             <h2>마이페이지 <small>회원가입부터 주문/배송등 쇼핑에 필요한 궁굼한 사항을 친절한 안내로 보다 편안한 쇼핑을 할 수 있도록 도와 드리겠습니다.</small></h2>
         </section>
-        <section class="address-info">
+        <section class="delivery-info">
             <div class="container">
-				<h2 class="sTitle">배송지관리 <small>나의 주소록입니다. 배송지 주소를 관리 할 수 있습니다.</small></h2>
-				<div class="addressNotice">
+				<h2 class="sTitle">주문/배송내역 <small>나의 주문내역입니다. 주문내역 및 배송현황을 확인할 수 있습니다.</small></h2>
+				<div class="deliveryNotice">
 					<ul>
-						<li>기타 문의 사항은 고객센터에 문의 바랍니다.<button class="btn btnS default">고객센터바로가기</button></li>
+						<li>배송추적은 배송완료 상태부터 확인 가능 합니다. 상세내역을 조회 하시려면 배송정보 조회 버튼을 누르세요.</li>
+						<li>환불/배송/품절된 상품의 입고문의/기타고객님의 이용에 관한 의견사항은 <strong class="blue">1:1친절상담</strong>을 이용하세요</li>
+						<li>각 상품의 Q&A 또는 상품평은 상품의 상세목록을 참고하세요.<button class="btn btnS default">고객센터바로가기</button></li>
 					</ul>
 				</div>
-                <h3>배송지목록</h3>
-				<table class="address-table">
+				<h3 class="order-title">주문번호 <span class="blue">A1632600594607</span> 의 주문 상세보기는 다음과 같습니다.<button class="btn btnS sub">전체취소</button></h3>
+				<h3>주문정보</h3>
+				<table class="delivery-table">
+					<tbody>
+						<tr>
+							<th>총 주문금액</th>
+							<td class="red">12,000원</td>
+						</tr>
+						<tr>
+							<th>주문일자</th>
+							<td>2016/11/21</td>
+						</tr>
+					</tbody>
+				</table>
+                <h3>주문상품정보</h3>
+				<table class="delivery-table">
 					<thead>
 						<tr>
-							<th><input type="checkbox" id="all"/><label for="all" class="sr-only">전체선택</label></th>
-							<th>주소명</th>
-							<th>전화번호</th>
-							<th>휴대폰번호</th>
-							<th>주소</th>
-							<th>관리</th>
+							<th>주문번호</th>
+							<th>상품명</th>
+							<th>옵션금액</th>
+							<th>상품금액</th>
+							<th>수량</th>
+							<th>주문금액</th>
+							<th>상태</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td colspan="6">등록된 배송지가 없습니다.</td>
+							<td>
+								A16322600594607
+								<button class="btn btnS sub">상세정보</button>
+							</td>
+							<td>
+								건고사리 100g(비닐)
+							</td>
+							<td>0원</td>
+							<td>12,000원</td>
+							<td>1</td>
+							<td class="red">12,000원</td>
+							<td>상태</td>
 						</tr>
 					</tbody>
 				</table>
-				<div class="left-btnArea">
-					<button class="btn btnS default">전체선택</button>
-					<button class="btn btnS default">선택삭제</button>
-					<button class="btn btnS default">기본 배송지로 설정</button>
+				<h3>주문자/배송지 정보</h3>
+				<div class="delivery-inner">
+					<div class="left">
+						<h4>주문하시는 분</h4>
+						<dl>
+							<dt><label for="myname">고객명</label></dt>
+							<dd><input id="myname" class="ipt default" type="text"></dd>
+							<dt><label for="myaddress1">거주지 주소</label></dt>
+							<dd>
+								<p><input id="myzipcode" class="ipt withBtn" type="text"><button class="btn btnT default">우편번호찾기</button></p>
+								<p><input id="myaddress1" class="ipt full" type="text"></p>
+								<p><input id="myaddress2" class="ipt full" type="text"></p>
+							</dd>
+							<dt><label for="mytel1">전화번호</label></dt>
+							<dd>
+								<input id="mytel1" class="ipt tel" type="text">
+								-
+								<input id="mytel2" class="ipt tel" type="text">
+								-
+								<input id="mytel3" class="ipt tel" type="text">
+							</dd>
+							<dt><label for="mymob1">휴대폰번호</label></dt>
+							<dd>
+								<input id="mymob1" class="ipt tel" type="text">
+								-
+								<input id="mymob2" class="ipt tel" type="text">
+								-
+								<input id="mymob3" class="ipt tel" type="text">
+							</dd>
+							<dt><label for="mymail1">이메일주소</label></dt>
+							<dd>
+								<input id="mymail1" class="ipt full" type="text">
+							</dd>
+						</dl>
+					</div>
+					<div class="right">
+						<h4>받으시는 분</h4>
+						<dl>
+							<dt><label for="name">받으시는 분</label></dt>
+							<dd><input id="name" class="ipt default" type="text"></dd>
+							<dt><label for="address1">배송지 주소</label></dt>
+							<dd>
+								<p><input id="zipcode" class="ipt withBtn" type="text"><button class="btn btnT default">우편번호찾기</button></p>
+								<p><input id="address1" class="ipt full" type="text"></p>
+								<p><input id="address2" class="ipt full" type="text"></p>
+							</dd>
+							<dt><label for="tel1">전화번호</label></dt>
+							<dd>
+								<input id="tel1" class="ipt tel" type="text">
+								-
+								<input id="tel2" class="ipt tel" type="text">
+								-
+								<input id="tel3" class="ipt tel" type="text">
+							</dd>
+							<dt><label for="mob1">휴대폰번호</label></dt>
+							<dd>
+								<input id="mob1" class="ipt tel" type="text">
+								-
+								<input id="mob2" class="ipt tel" type="text">
+								-
+								<input id="mob3" class="ipt tel" type="text">
+							</dd>
+							<dt><label for="mymail1">배송시 유의사항</label></dt>
+							<dd>
+								<textarea class="ipt full"></textarea>
+							</dd>
+						</dl>
+					</div>
+					<div class="btn-area center">
+						<a href="javascript:" class="btn btnS sub">주문정보 변경하기</a>
+					</div>
 				</div>
-				<div class="right-btnArea">
-					<button class="btn btnS sub create">배송지 등록</button>
+				<h3>결제정보</h3>
+				<table class="delivery-table">
+					<thead>
+						<tr>
+							<th>상품금액</th>
+							<th>할인금액</th>
+							<th>배송비</th>
+							<th>쿠폰사용</th>
+							<th>적립금</th>
+							<th>결제금액</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>12,000원<i class="fa fa-minus-circle" aria-hidden="true"></i></td>
+							<td>1,200원<i class="fa fa-plus-circle" aria-hidden="true"></i></td>
+							<td>0원<i class="fa fa-minus-circle" aria-hidden="true"></i></td>
+							<td>0원<i class="fa fa-minus-circle" aria-hidden="true"></i></td>
+							<td>0원<i class="fa fa-pause-circle fa-rotate-90" aria-hidden="true"></i></td>
+							<td class="red">10,800원</td>
+						</tr>
+						<tr>
+							<td>계좌 정보</td>
+							<td colspan="5">하나은행 123123123, 예금주 : 설현, 입금자명 : 최밍구</td>
+						</tr>
+						<tr>
+							<td>결제금액</td>
+							<td colspan="5"><strong>10,800원 온라인입금</strong></td>
+						</tr>
+						<tr>
+							<td>적립금액</td>
+							<td colspan="5"><strong>120원</strong></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3>증빙요청내용</h3>
+				<table class="delivery-table">
+					<tbody>
+						<tr>
+							<th>증빙요청</th>
+							<td>현금영수증 개인소득공제</td>
+						</tr>
+						<tr>
+							<th>내용</th>
+							<td>010-8300-0911</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn-area center">
+					<a href="javascript:" class="btn btnM sub">확인</a>
 				</div>
             </div>
         </section>

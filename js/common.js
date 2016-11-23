@@ -97,5 +97,8 @@ $(document).ready(function() {
 			$('.sign-table tr.hidden').hide();
 		}
 	});
+	$('button.create').on('click',function(){
+		$('#createPopup').show();
+	});
 
 });
