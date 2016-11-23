@@ -156,65 +156,179 @@
         <!-- E:main_menu -->
     </header>
     <!-- E:header -->
+
+	<!-- S:popup -->
+	<section id="createPopup">
+		<div class="popContainer">
+			<h2>주문취소 / 교환 & 환불 안내</h2>
+			<h3>주문취소</h3>
+			<ul>
+				<li>주문 상품 전체 취소는 <strong class="blue">"입금대기중/결제완료"</strong> 단계에서만 가능합니다.</li>
+				<li>부분취소의 경우 상품별 진행현황이 "입금대기중/결제완료" 단계에서만 가능합니다.</li>
+				<li>무통장 및 가상계좌 결제의 경우 주문일 기준으로 다음날까지(영업일기준) 결제가 완료되지 않을 경우 주문은 자동으로 취소됩니다.</li>
+				</li>
+			</ul>
+			<h3>반품/교환</h3>
+			<ul>
+				<li>주문 상품이 배송완료 된 후 <strong class="blue">"마이페이지 > 취소/반품/교환신청"</strong>메뉴에서 반품/교환신청이 가능합니다.</li>
+				<li>단순변심에 따른 반품/교환의 경우 왕복 배송비가 부과되며 배송료는 고객 부담입니다.</li>
+			</ul>
+
+			<div class="btn-area center">
+				<a href="#" class="btn btnB default">창닫기</a>
+			</div>
+		</div>
+	</section>
+	<!-- E:popup -->
+
     <!-- S:mainContent -->
 
+    <aside id="sidebar">
+        <div class="container">
+            <h3><strong>최밍구</strong>님의 쇼핑정보</h3>
+            <dl class="my-info">
+                <dt>회원등급</dt>
+                <dd><strong>기린회원</strong></dd>
+                <dt>적립금</dt>
+                <dd><strong>53,000</strong>원</dd>
+                <dt>할인쿠폰</dt>
+                <dd><strong>0</strong>개</dd>
+                <dt>관심리스트</dt>
+                <dd><strong>0</strong>개</dd>
+            </dl>
+            <ul>
+                <li>
+                    <h4><a href="">개인정보</a></h4>
+                    <ul>
+                        <li><a href="">회원정보수정</a></li>
+                        <li><a href="">환불계좌관리</a></li>
+                        <li><a href="">배송지관리</a></li>
+                        <li><a href="">회원탈퇴</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4><a href="">나의쇼핑정보</a></h4>
+                    <ul>
+                        <li><a href="">주문/배송내역</a></li>
+                        <li><a href="">취소/반품/환불내역</a></li>
+                        <li><a href="">교환/AS내역</a></li>
+                        <li><a href="">나의적립금</a></li>
+                        <li><a href="">할인쿠폰</a></li>
+                        <li><a href="">관심리스트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4><a href="">1:1친절상담</a></h4>
+                </li>
+                <li>
+                    <h4><a href="">나의 질문과 답변</a></h4>
+                </li>
+                <li>
+                    <h4><a href="">나의 상품평</a></h4>
+                </li>
+                <li>
+                    <h4><a href="">상품 Q&amp;A</a></h4>
+                </li>
+
+            </ul>
+
+        </div>
+    </aside>
+
+
     <article id="content" class="sub">
-        <section class="sign-top container">
-            <h2>회원가입 <small>회원가입은 무료입니다. 별도의 가입비 없이 회원만의 특혜를 누리실 수 있습니다.</small></h2>
+        <section class="mypage-top container">
+            <h2>마이페이지 <small>회원가입부터 주문/배송등 쇼핑에 필요한 궁굼한 사항을 친절한 안내로 보다 편안한 쇼핑을 할 수 있도록 도와 드리겠습니다.</small></h2>
         </section>
-
-
-        <section class="sign-notice">
+        <section class="delivery-info">
             <div class="container">
-				<ul class="list-type01">
-		            <li>이용약관에 동의하셔야 가입이 가능합니다.</li>
-					<li>고객님의 정보는 절대 다른 용도로 이용되지 않습니다.</li>
-				</ul>
-            </div>
-        </section>
-
-
-        <section class="sign-agree">
-            <div class="container">
-				<h2>이용약관</h2>
-				<div class="textarea">
-				</div>
-				<div class="agree-check">
-					이용약관에 동의하십니까?
-					<input type="checkbox" id="agree" />
-					<label for="agree">동의합니다.</label>
-					<input type="checkbox" id="disagree"/>
-					<label for="disagree">동의하지 않습니다.</label>
-				</div>
-				<h2>개인정보 수집 이용안내</h2>
-				<div class="textarea">
-				</div>
-				<div class="agree-check">
-					개인정보 수집 이용안내에 동의하십니까?
-					<input type="checkbox" id="agree2" />
-					<label for="agree2">동의합니다.</label>
-					<input type="checkbox" id="disagree2"/>
-					<label for="disagree2">동의하지 않습니다.</label>
-				</div>
-				<h2>본인확인</h2>
-				<div class="certify">
-					<input type="radio" id="certify-nc" />
-					<label for="certify-nc">본인확인</label>
-					<input type="radio" id="certify-ipin" />
-					<label for="certify-ipin">아이핀(I-PIN)</label>
-					<a href="#" class="btn btnS sub">본인확인</a>
-					<ul class="list-type01">
-						<li>고객님의 개인정보보호를 위해 본인인증 기관을 통해 본인인증이 진행됩니다.</li>
-						<li>고객님의 소중한 정보 보호에 앞장서겠습니다.</li>
-					</ul>
-				</div>
-				<div class="info-table">
+				<h2 class="sTitle">전체내역 <small>나의 주문내역입니다. 주문내역 및 배송현황을 확인할 수 있습니다.</small></h2>
+				<div class="deliveryNotice">
 					<ul>
-						<li>타인의 정보를 도용하여 임의로 사용하면 민사상 불법행위 책임 및 업무방해에 대하여 5년 이하의 징역 또는 1천 500만원 이하의 벌금이 부과될 수 있습니다.</li>
-						<li>타인의 정보를 부정하게 사용하는 경우 5년 이하의 징역 또는 1천만원 이하의 벌금(업무방해죄)에 처해지게 되며, 민사상 불법행위로 인하여 손해배상 의무가 있습니다.</li>
+						<li>배송추적은 배송완료 상태부터 확인 가능 합니다. 상세내역을 조회 하시려면 배송정보 조회 버튼을 누르세요.</li>
+						<li>환불/배송/품절된 상품의 입고문의/기타고객님의 이용에 관한 의견사항은 <strong class="blue">1:1친절상담</strong>을 이용하세요</li>
+						<li>각 상품의 Q&A 또는 상품평은 상품의 상세목록을 참고하세요.<button class="btn btnS default">고객센터바로가기</button><button class="btn btnS default create">주문취소/교환&환불안내</button></li>
 					</ul>
 				</div>
-			</div>
+				<h3>기간선택</h3>
+				<div class="search-date">
+					<p>
+						<input type="radio" id="date1" />
+						<label for="date1">최근 2주일</label>
+						<input type="radio" id="date2" />
+						<label for="date2">1개월</label>
+						<input type="radio" id="date3" />
+						<label for="date3">2개월</label>
+						<input type="radio" id="date4" />
+						<label for="date4">3개월</label>
+						<input type="radio" id="date5" />
+						<label for="date5">6개월</label>
+						<input type="radio" id="date6" />
+						<label for="date6">1년</label>
+					</p>
+					<div>
+						<input type="text" id="sDate" class="ipt default">
+						<i class="fa fa-calendar" aria-hidden="true"></i>
+						<label for="sDate">부터</label>
+						<input type="text" id="eDate" class="ipt default">
+						<i class="fa fa-calendar" aria-hidden="true"></i>
+						<label for="sDate">의 내역</label>
+						<button class="btn btnS sub">기간조회</button>
+					</div>
+				</div>
+                <h3>주문/배송 내역</h3>
+				<table class="delivery-table">
+					<thead>
+						<tr>
+							<th>주문번호</th>
+							<th>상품명</th>
+							<th>옵션금액</th>
+							<th>상품금액</th>
+							<th>수량</th>
+							<th>주문금액</th>
+							<th>상태</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								A16322600594607
+								<button class="btn btnS sub">상세정보</button>
+							</td>
+							<td>
+								건고사리 100g(비닐)
+							</td>
+							<td>0원</td>
+							<td>12,000원</td>
+							<td>1</td>
+							<td class="red">12,000원</td>
+							<td>입금확인중</td>
+						</tr>
+						<tr>
+							<td>
+								A16322600594607
+								<button class="btn btnS sub">상세정보</button>
+							</td>
+							<td>
+								제주볶음참깨 180g
+							</td>
+							<td>0원</td>
+							<td>12,000원</td>
+							<td>1</td>
+							<td class="red">12,000원</td>
+							<td>주문취소완료</td>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="pagination">
+                    <li><a class="btn-prev" href="">이전</a></li>
+                    <li><a href="">1</a></li>
+                    <li><a class="active" href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a class="btn-next" href="">다음</a></li>
+                </ul>
+            </div>
         </section>
 
 

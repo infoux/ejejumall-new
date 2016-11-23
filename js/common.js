@@ -89,6 +89,22 @@ $(document).ready(function() {
         $('section.login-form #'+ loginTab).addClass('active');
     });
 
+    $('section.store-content .store-tabs a').on('click', function() {
+        var storeTab = $(this).attr("data");
+        $('section.store-content .store-tabs a').removeClass('active');
+        $(this).addClass('active');
+        $('section.store-content .store').removeClass('active');
+        $('section.store-content #'+ storeTab).addClass('active');
+    });
+
+    $('section.info-content .shopping-tabs a').on('click', function() {
+        var shoppingTab = $(this).attr("data");
+        $('section.info-content .shopping-tabs a').removeClass('active');
+        $(this).addClass('active');
+        $('section.info-content .shopping').removeClass('active');
+        $('section.info-content #'+ shoppingTab).addClass('active');
+    });
+
 
 	$('#pwModify').click(function(){
 		if(($('#pwModify').is(':checked')) == true){
