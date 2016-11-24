@@ -117,4 +117,15 @@ $(document).ready(function() {
 		$('#createPopup').show();
 	});
 
+	$('#content.sub .info-content #accordion div.accordion-panel div.panel-head').click(function(){
+		$('#accordion div.panel-head').removeClass('active');
+		$(this).addClass('active');
+		$('#content.sub .info-content #accordion div.accordion-panel div.panel-content').slideUp();
+		if(!$(this).next().is(':visible')){
+			$(this).next().slideDown();
+		} else {
+			$(this).next().slideUp();
+		}
+	});
+
 });

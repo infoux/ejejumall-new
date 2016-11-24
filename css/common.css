@@ -2272,7 +2272,7 @@ section.view-top .info-text {
 }
 
 #content.sub .my-data p{
-	width:980px;
+	/* width:980px; */
 	margin:20px auto;
 	text-align:center;
 }
@@ -3113,14 +3113,14 @@ aside#sidebar ul ul {
 	margin:0;
 }
 #content.sub .signout-info .reasonList ul{
-	width:500px;
+	width:100%;
 	padding:20px 0 20px 25px;
 	overflow:hidden;
 }
 #content.sub .signout-info .reasonList ul li{
 	float:left;
 	list-style:none;
-	width:230px;
+	width:calc(100% / 3);
 	margin-bottom:10px;
 }
 #content.sub .signout-info .reasonList ul li input[type="checkbox"]{
@@ -3128,13 +3128,11 @@ aside#sidebar ul ul {
 	margin-right:3px;
 }
 #content.sub .signout-info .reasonList ul li.etc{
-	position:absolute;
-	top:70px;
-	right:0;
+	width:calc(100% - 20px);
 }
 #content.sub .signout-info .reasonList ul li.etc textarea{
 	display:block;
-	width:180px;
+	width:100%;
 	min-height:80px;
 	padding:10px;
 	margin-top:10px;
@@ -3256,7 +3254,7 @@ aside#sidebar ul ul {
 }
 #content.sub .delivery-info .search-date p input[type='radio']{
 	vertical-align:-2px;
-	margin:0 2px;
+	margin:0 -10px 0 2px;
 }
 #content.sub .delivery-info .search-date p input[type="radio"]:checked + label{
 	color:#3366cc;
@@ -3320,6 +3318,21 @@ aside#sidebar ul ul {
 	right:-15px;
 	font-size:30px;
 	color:#eee;
+}
+#content.sub .delivery-table td p.wish{
+	display:inline-block;
+	margin:10px 0 0 0;
+}
+#content.sub .delivery-table td p.order{
+	margin:0;
+}
+#content.sub .delivery-table td p.order button{
+	width:154px;
+	padding:13px 16px;
+}
+#content.sub .delivery-table td p.wish button{
+	display:inline-block;
+	margin:0;
 }
 
 #content.sub .delivery-inner{
@@ -3716,6 +3729,10 @@ aside#sidebar ul ul {
     vertical-align:middle;
     text-align:left;
 }
+#content.sub .info-content table.center th,
+#content.sub .info-content table.center td{
+	text-align:center;
+}
 #content.sub .sitemap{
 	margin:30px auto;
 }
@@ -3747,20 +3764,18 @@ aside#sidebar ul ul {
 #content.sub .info-content .shopping-tabs{
 	font-size:0;
 	padding:0;
-	margin:0;
+	margin:20px 0 0;
 	width:100%;
 }
 #content.sub .info-content .shopping-tabs li{
 	display:inline-block;
 	font-size:14px;
-	width:calc(100% / 3);
+	width:calc(100% / 6);
 }
 #content.sub .info-content .shopping-tabs li a{
 	display:block;
+	color:#333;
 	border:1px solid #eee;
-	border-bottom:1px solid #333;
-	background:#efefef;
-	color:#555;
 	border-left:none;
 	cursor:pointer;
 	width:100%;
@@ -3768,47 +3783,97 @@ aside#sidebar ul ul {
 	line-height:46px;
 	text-align:center;
 }
-#content.sub .info-content .shopping-tabs li:nth-child(3) a.active{
-	border-right:1px solid #eee;
-}
-#content.sub .info-content .shopping-tabs li:nth-child(4) a.active{
+#content.sub .info-content .shopping-tabs li:first-child a{
 	border-left:1px solid #eee;
 }
-#content.sub .info-content .shopping-tabs li:nth-child(6) a.active{
-	border-right:1px solid #eee;
-}
-#content.sub .info-content .shopping-tabs li:nth-child(4),#content.sub .info-content .shopping-tabs li:nth-child(5),#content.sub .info-content .shopping-tabs li:nth-child(6){
-	margin-top:20px;
-}
 #content.sub .info-content .shopping-tabs li a.active{
-	border-color:#333;
-	border-bottom:none;
-	background:#fff;
-	color:#333;
+	background:#eee;
 	font-weight:600;
 }
-#content.sub .info-content .shopping-tabs li:first-child a,#content.sub .info-content .shopping-tabs li:first-child a.active{
-	border-left:1px solid #eee;
-}
-#content.sub .info-content .shopping-tabs li a.active{
-	border-left:1px solid #333;
-}
+
 #content.sub .info-content div.shopping{
 	display:none;
 }
 #content.sub .info-content div.shopping.active{
 	display:block;
+	margin-top:30px;
 }
 #content.sub .info-content img{
 	display:block;
 	margin:0 auto;
 }
-
-
-
-
-
-
+#content.sub .info-content #accordion div.accordion-panel{
+	border:none;
+	border-radius:0;
+	margin:0;
+	border-bottom:1px solid #eee;
+}
+#content.sub .info-content #accordion div.accordion-panel div.panel-head{
+	border:1px solid #ddd;
+	border-left:none;
+	border-radius:0;
+	padding:0;
+	background:#999;
+}
+#content.sub .info-content #accordion div.accordion-panel div.panel-head span{
+	display:inline-block;
+	font-size:26px;
+	width:40px;
+	padding:17px 0 16px;
+	vertical-align:top;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+}
+#content.sub .info-content #accordion div.accordion-panel div.panel-head.active span{
+	background:#f15e0e;
+}
+#content.sub .info-content #accordion div.accordion-panel div.panel-head h3{
+	display:inline-block;
+	width:calc(100% - 40px);
+	background:#fff;
+	margin-top:0;
+	margin-bottom:0;
+	font-size:16px;
+	color:inherit;
+}
+#content.sub .info-content #accordion div.accordion-panel div.panel-head h3 a{
+	display:block;
+	line-height:1.4;
+	padding:20px;
+}
+#content.sub .info-content #accordion div.accordion-panel div.panel-head.active h3 a{
+	background:#333;
+	color:#fff;
+}
+#content.sub .info-content #accordion div.accordion-panel div.panel-content{
+	background:#ccc;
+	font-size:0;
+	display:none;
+}
+#content.sub .info-content #accordion div.accordion-panel div.panel-content span{
+	display:inline-block;
+	font-size:26px;
+	width:40px;
+	padding:14px 0;
+	vertical-align:top;
+	text-align:center;
+	color:#fff;
+	font-weight:800;
+}
+#content.sub .info-content #accordion div.accordion-panel div.panel-content p{
+	display:inline-block;
+	padding:20px;
+	width:calc(100% - 40px);
+	border-top:none !important;
+	background:#f4f4f4;
+	margin:0;
+	font-size:1rem;
+}
+#content.sub .info-content #accordion div.accordion-panel div.panel-content:before{
+	content:'';
+	display:table;
+}
 
 
 
