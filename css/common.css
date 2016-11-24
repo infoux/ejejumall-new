@@ -3156,6 +3156,11 @@ aside#sidebar ul ul {
 	background:url('../images/bg.png');
 	z-index:700;
 }
+#createPopup.cart div.popContainer{
+	top:calc(50% - 130px);
+	left:calc(50% - 179px);
+	width:358px;
+}
 #createPopup div.popContainer{
 	position:absolute;
 	top:calc(50% - 220px);
@@ -3178,6 +3183,14 @@ aside#sidebar ul ul {
 #createPopup div.popContainer ul li:before{
 	content:"·";
 	padding-right:6px;
+}
+#createPopup .popInner{
+	display:block;
+	width:100%;
+	padding:20px;
+	text-align:center;
+	background:#f4f4f4;
+	margin:20px 0;
 }
 #createPopup .pop-table {
     width:100%;
