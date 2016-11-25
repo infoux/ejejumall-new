@@ -3198,6 +3198,10 @@ aside#sidebar ul ul {
     margin-top:20px;
 }
 
+#createPopup .pop-table.center td,#createPopup .pop-table.center th{
+	text-align:center;
+}
+
 #createPopup .pop-table th {
     background:#f4f4f4;
 	width:100px;
@@ -3221,7 +3225,44 @@ aside#sidebar ul ul {
 	padding-top:5px;
 	color:#999;
 }
-
+#createPopup .pop-table td strong.red{
+	display:block;
+	margin:4px 0 0;
+}
+#createPopup div.count{
+	display:block;
+	margin:15px 0;
+	text-align:center;
+}
+#createPopup div.count label{
+	font-size:14px;
+	font-weight:bold;
+	margin-right:25px;
+}
+#createPopup div.count button{
+	display:inline-block;
+	vertical-align:top;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	background:#efefef;
+	border:none;
+	color:#555;
+}
+#createPopup div.count input[type='text']{
+	vertical-align:top;
+	border:1px solid #eee;
+	padding:0 10px;
+	height:28px;
+	line-height:28px;
+	max-width:60px;
+	text-align:center;
+}
+#createPopup div.count p{
+	display:inline-block;
+	padding-left:30px;
+	margin:4px 0 0;
+}
 #content.sub .delivery-info h3{
 	margin:25px 0;
 }
@@ -3887,9 +3928,58 @@ aside#sidebar ul ul {
 	content:'';
 	display:table;
 }
+#content.sub .info-content .cs-tabs{
+	font-size:0;
+	padding:0;
+	margin:20px 0 0;
+	width:100%;
+}
+#content.sub .info-content .cs-tabs li{
+	display:inline-block;
+	font-size:14px;
+	width:calc(100% / 4 - 20px);
+	margin:10px;
+}
+#content.sub .info-content .cs-tabs li a{
+	display:block;
+	color:#333;
+	border:1px solid #eee;
+	cursor:pointer;
+	width:100%;
+	height:46px;
+	line-height:46px;
+	text-align:center;
+}
+#content.sub .info-content .cs-tabs li a.active{
+	background:#eee;
+	font-weight:600;
+}
 
-
-
+#content.sub .info-content div.cs{
+	display:none;
+}
+#content.sub .info-content div.cs.active{
+	display:block;
+	margin-top:30px;
+}
+#content.sub .deliveryNotice table {
+    width:100%;
+    border-top:2px solid #333;
+    margin-top:20px;
+	background:#fff;
+}
+#content.sub .deliveryNotice table th {
+    background:#f4f4f4;
+	width:140px;
+}
+#content.sub .deliveryNotice table th,
+#content.sub .deliveryNotice table td {
+    position:relative;
+    border-bottom:1px solid #eee;
+    padding:14px;
+    vertical-align:middle;
+    text-align:center;
+}
 
 
 

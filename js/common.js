@@ -105,6 +105,14 @@ $(document).ready(function() {
         $('section.info-content #'+ shoppingTab).addClass('active');
     });
 
+    $('section.info-content .cs-tabs a').on('click', function() {
+        var csTab = $(this).attr("data");
+        $('section.info-content .cs-tabs a').removeClass('active');
+        $(this).addClass('active');
+        $('section.info-content .cs').removeClass('active');
+        $('section.info-content #'+ csTab).addClass('active');
+    });
+
 
 	$('#pwModify').click(function(){
 		if(($('#pwModify').is(':checked')) == true){
