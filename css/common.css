@@ -1088,6 +1088,14 @@ a:hover {
     padding:0 20px;
 }
 
+#content.main section.main-customer .container .notice li a{
+	display:inline-block;
+	width:230px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
 #content.main section.main-customer .customer {
     padding-left:0;
     width:30%;
@@ -4080,7 +4088,6 @@ div.quick {
     margin:0;
     width:100px;
     height:auto;
-    border:1px solid #eee;
     text-align:center;
 
 }
@@ -4111,12 +4118,15 @@ div.quick .btn-next i {
     font-size:14px;
 }
 div.quick ul {
-    margin:10px 0 0;
+    margin:0;
     padding:0;
+	padding-top:10px;
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
 }
 div.quick li {
-    margin-bottom:10px;
     list-style:none;
+	height:73px;
 }
 div.quick img {
     width:60px;
@@ -4126,6 +4136,8 @@ div.quick img {
 div.quick .cart a {
     display:block;
     padding:20px 0;
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
 }
 
 div.quick .cart i {
@@ -4150,14 +4162,16 @@ div.quick .top a {
 
 div.side-banner {
     display:block;
-    position:fixed;
     z-index:600;
-    left:calc(50% + 520px);
     background:#fff;
-    top:620px;
     margin:0;
     width:100px;
     height:auto;
+	margin-top:15px;
+}
+div.side-banner img{
+	width:100px;
+	height:auto;
 }
 
 div.side-banner h2 {
