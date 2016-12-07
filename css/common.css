@@ -1463,6 +1463,7 @@ section.product .company {
 section.product .price {
     padding:0 10px;
     text-align:right;
+	width:130px;
 }
 
 section.product .price strong {
@@ -1609,7 +1610,7 @@ section.product ul.th-list p.company {
 }
 
 section.product ul.th-list p.point {
-    width:200px;
+    width:145px;
     padding:0 10px;
 }
 
