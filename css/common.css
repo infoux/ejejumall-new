@@ -1366,6 +1366,13 @@ a:hover {
     background:#333;
 }
 
+#content.sub .sub-recopick > div{
+    font-size:1rem;
+    padding:10px;
+    border:5px solid #887042;
+    min-height:220px;
+}
+
 section.product div.sort {
     position:relative;
     border-bottom:1px solid #ccc;
