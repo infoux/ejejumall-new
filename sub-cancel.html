@@ -261,7 +261,7 @@
 							<td>1,000원</td>
 							<td>1</td>
 							<td>
-								<select>
+								<select class="ipt">
 									<option value="1">1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
@@ -271,6 +271,116 @@
 					</tbody>
 				</table>
 				<div class="btn-area center">
+					<a href="javascript:" class="btn btnS sub">전체삭제</a>
+				</div>
+				<h3>취소사유</h3>
+				<table class="delivery-table":>
+					<tbody>
+						<tr>
+							<th>사유선택</th>
+							<td>
+								<select class="ipt full">
+									<option value="">선택</option>
+									<option value="">그냥ㅋ</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>사유입력</th>
+							<td>
+								<textarea class="ipt full"></textarea>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3>환불예정금액</h3>
+				<table class="delivery-table">
+					<tbody>
+						<tr>
+							<th>취소상품금액</th>
+							<td>1,000원</td>
+						</tr>
+						<tr>
+							<th>추가 배송비</th>
+							<td>0원</td>
+						</tr>
+						<tr>
+							<th>총 환불예정금액</th>
+							<td>1,000원</td>
+						</tr>
+						<tr>
+							<th>반환적립금</th>
+							<td>0원</td>
+						</tr>
+						<tr>
+							<th>환불금액</th>
+							<td class="red">1,000원</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3>환불계좌목록</h3>
+				<table class="delivery-table">
+					<thead>
+						<tr>
+							<th>은행명</th>
+							<th>계좌번호</th>
+							<th>예금주</th>
+							<th>선택</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>국민은행</td>
+							<td>23940101005445</td>
+							<td>윤재웅</td>
+							<td><input type="radio" /></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3>환불계좌 - 직접입력</h3>
+				<table class="delivery-table">
+					<tbody>
+						<tr>
+							<th>은행</th>
+							<td>
+								<select class="ipt full">
+									<option value="">국민은행</option>
+									<option value="">기업은행</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>계좌번호</th>
+							<td><input type="text" class="ipt full"></td>
+						</tr>
+						<tr>
+							<th>예금주</th>
+							<td><input type="text" class="ipt full"></td>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="list-type01">
+					<li>무통장입금, 가상계좌 결제인 경우에만 환불계좌를 입력해 주세요.</li>
+					<li>신용카드 / 실시간 계좌이체 / 적립금 / 포인트 결제인 경우 환불계좌로 환불되지 않습니다.</li>
+				</ul>
+				<div class="btn-area center">
+					<a href="javascript:" class="btn btnB sub">취소 신청</a>
+					<a href="javascript:" class="btn btnB default">주문 목록</a>
+				</div>
+				<div class="coupon-notice">
+					<p><i class="fa fa-exclamation-circle" aria-hidden="true"></i>주문취소 / 교환&amp;환불 안내</p>
+					<div>
+						<h4>주문취소</h4>
+						<span>주문 상품 전체 취소는 <strong>"입금대기중/결제완료"</strong> 단계에서만 가능합니다.</span>
+						<span>부분취소의 경우 상품별 진행현황이 "입금대기중/결제완료" 단계에서만 가능하며</span>
+						<span>무통장 및 가상계좌 결제의 경우 주문일 기준으로 다음날까지(영업일기준)</span>
+						<span>결제가 완료되지 않을 경우 주문은 자동으로 취소됩니다.</span>
+						<h4 class="mgt">반품/교환</h4>
+						<span>주문 상품이 배송완료 된 후 <strong>"마이페이지>취소/반품/교환신청"</strong>메뉴에서</span>
+						<span>반품 / 교환신청이 가능합니다.</span>
+						<span>단순변심에 따른 반품/교환의 경우 왕복 배송비가 부과되며 배송료는 고객 부담입니다.</span>
+					</div>
+				</div>
             </div>
         </section>
 
