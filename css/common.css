@@ -1674,7 +1674,9 @@ ul.pagination li a.active {
 }
 
 ul.pagination li a.btn-prev,
-ul.pagination li a.btn-next {
+ul.pagination li a.btn-next,
+ul.pagination li a.btn-prevAll,
+ul.pagination li a.btn-nextAll{
     background:#efefef;
 }
 
