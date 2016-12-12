@@ -1366,13 +1366,42 @@ a:hover {
     background:#333;
 }
 
-#content.sub .sub-recopick > div{
-    font-size:1rem;
-    padding:10px;
-    border:5px solid #887042;
-    min-height:220px;
+#content.sub .sub-best > div{
+	display:block;
+	width:100%;
+	height:452px;
 }
-
+#content.sub .sub-best > div img.visual{
+	width:249px;
+	height:452px;
+}
+#content.sub .sub-best > div ul{
+	float:right;
+	display:inline-block;
+	width:731px;
+	padding:0;
+	margin:0;
+	list-style:none;
+	border-top:1px solid #ccc;
+}
+#content.sub .sub-best > div ul li{
+	float:left;
+	width:calc(100% / 3);
+	height:225.5px;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	text-align:center;
+	padding-top:20px;
+}
+#content.sub .sub-best > div ul li p.name{
+	padding:0 10px;
+	margin:0;
+	font-weight:600;
+}
+#content.sub .sub-best > div ul li p.price{
+	margin:5px 0 0 0;
+	font-weight:600;
+}
 section.product div.sort {
     position:relative;
     border-bottom:1px solid #ccc;
