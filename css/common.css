@@ -1386,7 +1386,7 @@ a:hover {
 }
 #content.sub .sub-best > div ul li{
 	float:left;
-	width:calc(100% / 3);
+	width:calc(100% / 3 - 1px);
 	height:225.5px;
 	border-right:1px solid #ccc;
 	border-bottom:1px solid #ccc;
