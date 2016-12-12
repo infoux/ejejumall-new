@@ -4048,6 +4048,29 @@ aside#sidebar ul ul {
     text-align:center;
 }
 
+#content.sub div.search-area{
+	display:block;
+	margin-bottom:50px;
+}
+#content.sub div.search-area ul{
+	display:block;
+	margin:10px 0;
+	padding:0;
+	list-style:none;
+}
+#content.sub div.search-area ul li{
+	float:left;
+	width:calc(100% / 4);
+	height:25px;
+	line-height:25px;
+	font-size:16px;
+	font-weight:600;
+	text-align:center;
+}
+#content.sub div.search-area ul li a:hover{
+	color:#f15e0e;
+}
+
 
 
 
