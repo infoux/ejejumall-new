@@ -3327,7 +3327,7 @@ aside#sidebar ul ul {
 	vertical-align:-3px;
 }
 #createPopup ul.survey li p{
-	padding-left:20px;
+	padding:0 20px;
 }
 #createPopup ul.survey li:before{
 	display:none;
