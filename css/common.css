@@ -3310,6 +3310,28 @@ aside#sidebar ul ul {
 	padding-left:30px;
 	margin:4px 0 0;
 }
+#createPopup ul.survey{
+	margin:0;
+}
+#createPopup ul.survey li{
+	padding:10px 0;
+	border-top:1px solid #ccc;
+}
+#createPopup ul.survey li:first-child{
+	border-top:none;
+}
+#createPopup ul.survey li label{
+	margin:0 7px;
+}
+#createPopup ul.survey li input[type='radio']{
+	vertical-align:-3px;
+}
+#createPopup ul.survey li p{
+	padding-left:20px;
+}
+#createPopup ul.survey li:before{
+	display:none;
+}
 #content.sub .delivery-info h3{
 	margin:25px 0;
 }
