@@ -99,6 +99,14 @@ a:hover {
     width: 140px;
 }
 
+.ipt.long {
+    width: 200px;
+}
+
+.ipt.longs {
+    width: 320px;
+}
+
 .ipt.withBtn {
     width: calc(100% - 110px);
 }
@@ -2895,7 +2903,7 @@ aside#sidebar ul ul {
     overflow-y: scroll;
     line-height: 1.4;
     padding: 15px;
-    border: 1px solid #efefef;
+    border: 1px solid #ccc;
 }
 
 #content.sub .agree-check {
@@ -2953,7 +2961,7 @@ aside#sidebar ul ul {
 #content.sub .sign-table th,
 #content.sub .sign-table td {
     position: relative;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #e4e4e4;
     padding: 14px;
     vertical-align: middle;
     text-align: left;
@@ -4479,4 +4487,65 @@ footer#footer .footer-banner li {
     display: inline-block;
     vertical-align: top;
     margin-left: 10px;
+}
+
+
+/* 입점신청 */
+
+section.registInfo .notice {
+    background: #efefef;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+section.registInfo .registStep {
+    padding: 0;
+    text-align: center;
+}
+
+section.registInfo .registStep li {
+    display: inline-block;
+    width: 230px;
+    height: 46px;
+    line-height: 46px;
+    text-align: left;
+    background: #333;
+    border-radius: 23px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+
+section.registInfo .registStep li strong {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    background: #666;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+section.registInfo .registStep li.active strong {
+    background: #ff9900;
+}
+
+section.registInfo .registStep li.active {
+    background: #ff6633;
+}
+
+section.registInfo .sign-table th {
+    width: 10%;
+}
+
+section.registInfo .sign-table td {
+    width: 40%;
+}
+
+/* 이벤트 */
+#content.sub .sub-event {
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    margin:20px 0;
 }
