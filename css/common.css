@@ -4549,3 +4549,33 @@ section.registInfo .sign-table td {
     text-align:center;
     margin:20px 0;
 }
+
+
+/* 회원탈퇴 */
+
+#content.sub .subNotice.noLine {
+    border:none;
+}
+
+#content.sub .reasonResult {
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    border:6px solid #eee;
+    padding:30px;
+    margin-bottom:20px;
+
+}
+
+#content.sub .reasonResult h3 {
+    font-size:20px;
+    line-height:1.6;
+}
+
+#content.sub .reasonResult h3 strong {
+    color:#3366cc;
+}
+
+#content.sub .reasonResult h3 small {
+    display:block;
+}
