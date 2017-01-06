@@ -4542,40 +4542,144 @@ section.registInfo .sign-table td {
     width: 40%;
 }
 
+
 /* 이벤트 */
+
+#content.sub .list-top.noLine {
+    border: none;
+}
+
 #content.sub .sub-event {
-    display:inline-block;
-    width:100%;
-    text-align:center;
-    margin:20px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#content.sub .eventList-tab {
+    font-size: 0;
+    padding: 0;
+    margin-top: 20px;
+    list-style: none;
+}
+
+#content.sub .eventList-tab li {
+    display: inline-block;
+    width: calc(100% / 3);
+}
+
+#content.sub .eventList-tab li a {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #ccc;
+    border-left-width: 0;
+    border-bottom-color: #f15e0e;
+}
+
+#content.sub .eventList-tab li:first-child a {
+    border-left-width: 1px;
+}
+
+#content.sub .eventList-tab li.active a {
+    color: #333;
+    font-weight: 600;
+    border-color: #f15e0e;
+    border-bottom-color: transparent;
+}
+
+#content.sub .sub-eventList .tabContent h3 {
+    font-size: 18px;
+    margin: 20px 0 0;
+}
+
+#content.sub .sub-eventList .tabContent ul {
+    padding: 0;
+    list-style: none;
+}
+
+#content.sub .sub-eventList .tabContent li {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    padding: 10px;
+    height: 83px;
+    margin-bottom: 10px;
+}
+
+#content.sub .sub-eventList .tabContent li p {
+    margin: 0;
+}
+
+#content.sub .sub-eventList .tabContent li p.image {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#content.sub .sub-eventList .tabContent li h4 {
+    padding-left: 216px;
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+#content.sub .sub-eventList .tabContent li p.text {
+    padding-left: 216px;
+}
+
+#content.sub .sub-eventList .tabContent li p.date {
+    position: absolute;
+    color: #53acf0;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+}
+
+#content.sub .sub-eventList .tabContent li.close {
+    border-color: #ccc;
+    background: #efefef;
+}
+
+#content.sub .sub-eventList .tabContent li.close img {
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+}
+
+#content.sub .sub-eventList .tabContent li.close h4,
+#content.sub .sub-eventList .tabContent li.close p {
+    color: #999;
 }
 
 
 /* 회원탈퇴 */
 
 #content.sub .subNotice.noLine {
-    border:none;
+    border: none;
 }
 
 #content.sub .reasonResult {
-    display:inline-block;
-    width:100%;
-    text-align:center;
-    border:6px solid #eee;
-    padding:30px;
-    margin-bottom:20px;
-
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border: 6px solid #eee;
+    padding: 30px;
+    margin-bottom: 20px;
 }
 
 #content.sub .reasonResult h3 {
-    font-size:20px;
-    line-height:1.6;
+    font-size: 20px;
+    line-height: 1.6;
 }
 
 #content.sub .reasonResult h3 strong {
-    color:#3366cc;
+    color: #3366cc;
 }
 
 #content.sub .reasonResult h3 small {
-    display:block;
+    display: block;
 }
