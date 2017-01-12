@@ -449,7 +449,7 @@ a:hover {
 
 #menu .menucate-set.on>li {
     border-left: 1px solid #eee;
-    width: calc(100% / 8 - 1px);
+    width: calc(100% / 7 - 1px);
     height: inherit;
     min-height: 270px;
     vertical-align: top;
