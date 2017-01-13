@@ -2778,12 +2778,17 @@ section.view-top .info-text {
 }
 
 #content.sub .order-info h3 {
+    width: 100%;
     margin: 0;
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
 
 #content.sub .order-info h3 ul {
     position: absolute;
-    right: 40px;
+    right: 30px;
     top: 0;
     margin: 0;
     font-size: 14px;
@@ -2836,7 +2841,12 @@ section.view-top .info-text {
     height: 80px;
 }
 
+#content.sub .order-info .delivery {
+    font-size: 0;
+}
+
 #content.sub .order-info .delivery dl {
+    display: inline-block;
     width: 600px;
     padding-right: 20px;
     border-right: 1px solid #eee;
@@ -2844,14 +2854,21 @@ section.view-top .info-text {
 
 #content.sub .order-info .delivery h3 {
     width: 600px;
-    position: relative;
 }
 
 #content.sub .order-info .container div.delivery-order {
+    display: inline-block;
+    width: 336px;
+    padding: 0 20px;
+}
+
+#content.sub .order-info .container div.delivery-order p.item {
+    position: relative;
+}
+
+#content.sub .order-info .container div.delivery-order p.item select {
     position: absolute;
     right: 0;
-    top: 0;
-    width: 360px;
 }
 
 #content.sub .order-info .container div.delivery-order h4 {
@@ -2865,8 +2882,14 @@ section.view-top .info-text {
     font-size: 14px;
 }
 
-#content.sub .order-info .container div.delivery-order select.title {
-    width: 250px;
+#content.sub .order-info .container div.delivery-order label {
+    display: inline-block;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 36px;
+    line-height: 36px;
 }
 
 #content.sub .order-info .addForm {
