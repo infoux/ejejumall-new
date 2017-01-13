@@ -2860,9 +2860,13 @@ section.view-top .info-text {
 }
 
 #content.sub .order-info .container div.delivery-order select {
-    width: 100%;
     height: 36px;
     margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#content.sub .order-info .container div.delivery-order select.title {
+    width: 250px;
 }
 
 #content.sub .order-info .addForm {
