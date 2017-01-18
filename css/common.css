@@ -1603,7 +1603,7 @@ section.product p {
 section.product .name {
     font-weight: 600;
     font-size: 16px;
-    padding: 10px 10px 10px;
+    padding: 10px 10px 4px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -1627,6 +1627,7 @@ section.product .price strong {
 
 section.product p.point {
     font-size: 14px;
+    padding: 0 10px;
     color: #376ed9;
 }
 
@@ -1667,6 +1668,7 @@ section.product ul.th .images {
 section.product ul.th img {
     width: 200px;
     height: 200px;
+    border: 2px solid #eee;
 }
 
 section.product ul.th div {
@@ -1901,12 +1903,19 @@ section.view-top .big-image div.box ul {
 }
 
 section.view-top .info-text {
+    position: relative;
     width: 500px;
     min-height: 554px;
     padding: 0 20px 20px;
     border: 1px solid #eee;
     border-top: none;
     border-bottom: none;
+}
+
+#content.sub .info-text .icons {
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 #content.sub .info-text dl {
@@ -3004,9 +3013,10 @@ aside#sidebar ul h4 a {
     width: 100%;
     margin: 0;
     border-bottom: 1px solid #ccc;
-    padding: 14px;
-    font-size: 16px;
+    padding: 12px;
+    font-size: 14px;
     color: #333;
+    font-weight: 400;
 }
 
 aside#sidebar ul h4 a::before {
@@ -3926,6 +3936,29 @@ aside#sidebar ul ul {
     text-align: left;
 }
 
+#content.sub .delivery-table td.attach span {
+    display: block;
+    padding-bottom: 10px;
+}
+
+#content.sub .delivery-table td.attach table {
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.editor_container {
+    border: 1px solid #ccc;
+}
+
+#content.sub .delivery-table #is_hidden,
+#content.sub .delivery-table #is_notice,
+#content.sub .delivery-table #is_secret {
+    position: relative;
+    left: -6px;
+    top: 2px;
+    margin-left: 10px;
+}
+
 #content.sub .delivery-table td.searchItem {
     text-align: left;
 }
@@ -3960,6 +3993,10 @@ aside#sidebar ul ul {
 #content.sub .delivery-table td button {
     display: block;
     margin: 7px auto 0;
+}
+
+#content.sub .delivery-table td.attach button {
+    display: inline-block;
 }
 
 #content.sub .delivery-table td i {
@@ -4602,7 +4639,7 @@ aside#sidebar ul ul {
     border-left: none;
     border-radius: 0;
     padding: 0;
-    background: #999;
+    background: #666;
 }
 
 #content.sub .info-content #accordion div.accordion-panel div.panel-head span {
@@ -4617,7 +4654,7 @@ aside#sidebar ul ul {
 }
 
 #content.sub .info-content #accordion div.accordion-panel div.panel-head.active span {
-    background: #f15e0e;
+    background: #333;
 }
 
 #content.sub .info-content #accordion div.accordion-panel div.panel-head h3 {
@@ -4637,8 +4674,7 @@ aside#sidebar ul ul {
 }
 
 #content.sub .info-content #accordion div.accordion-panel div.panel-head.active h3 a {
-    background: #333;
-    color: #fff;
+    color: #333;
 }
 
 #content.sub .info-content #accordion div.accordion-panel div.panel-content {
@@ -5368,7 +5404,7 @@ article#content.pop_wrap #goods_option_list ul li:last-child {
 
 .qna_list tr.article td {
     text-align: left;
-    padding: 10px 20px;
+    padding: 10px 20px !important;
     color: #585858
 }
 
@@ -5386,6 +5422,13 @@ article#content.pop_wrap #goods_option_list ul li:last-child {
     overflow: hidden
 }
 
+.qna_list tr.article td div.answer h4 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    color: #0162F4;
+}
+
 .qna_list tr.article td div.answer .sign {
     display: block;
     position: absolute;
@@ -5394,7 +5437,8 @@ article#content.pop_wrap #goods_option_list ul li:last-child {
 }
 
 .qna_list tr.article td div.answer p {
-    padding: 5px 0 0 70px
+    padding: 5px 0 0 20px;
+    margin: 0;
 }
 
 .qna_list tr.article td div.answer .remove {
@@ -5403,12 +5447,13 @@ article#content.pop_wrap #goods_option_list ul li:last-child {
     text-align: right
 }
 
-.qna_list tr.article td div.btn {
+.qna_list tr.article td div.btn-area .btn {
     clear: both;
     border-top: solid 1px #ddd;
     margin-top: 15px;
     text-align: center;
     width: 100%;
+    margin: 0 2px;
 }
 
 .qna_list tr.article td div.space {
@@ -5520,4 +5565,251 @@ article#content.pop_wrap #goods_option_list ul li:last-child {
 
 .mgb2 {
     margin-bottom: 6px;
+}
+
+
+/*board_total*/
+
+.board_total {
+    position: relative;
+    margin: 20px 0 0;
+}
+
+.board_total p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    font-size: 12px;
+    color: #999;
+}
+
+.board_total select {
+    height: 36px;
+    padding: 0 10px;
+    min-width: 160px;
+}
+
+
+/*board_search*/
+
+.board_search {
+    text-align: center;
+}
+
+.board_search strong {
+    display: none;
+}
+
+.board_search select,
+.board_search input,
+.board_search button {
+    height: 36px;
+    vertical-align: middle;
+}
+
+.board_search button {
+    border-radius: 0;
+}
+
+.board_search button i {
+    margin-right: 4px;
+}
+
+
+/*board_gallery*/
+
+ul.gallery_notice {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 20px;
+    list-style: none;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+ul.gallery_notice li {
+    border-bottom: 1px solid #eee;
+    padding: 0;
+    height: 34px;
+    line-height: 34px;
+    position: relative;
+}
+
+ul.gallery_notice li:last-child {
+    border-bottom: none;
+}
+
+ul.gallery_notice h3 {
+    margin: 0;
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #333;
+}
+
+ul.gallery_notice input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+ul.gallery_notice i {
+    position: absolute;
+    right: 10px;
+    font-style: normal;
+    font-size: 12px;
+    color: #999;
+}
+
+ul.gallery_notice strong {
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 10px;
+    font-size: 11px;
+    background: #3366cc;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.board_util {
+    position: relative;
+    padding: 10px;
+    margin: 20px 0 0;
+}
+
+.board_util p {
+    margin: 0;
+    padding: 0 !important;
+}
+
+.board_util input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+.board_util label {
+    font-weight: 600;
+}
+
+.bbs_total {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    margin: 0;
+    font-size: 12px;
+    color: #999;
+}
+
+ul.gallery_list {
+    display: inline-block;
+    font-size: 0;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+ul.gallery_list li {
+    display: inline-block;
+    position: relative;
+}
+
+ul.gallery_list li input[type="checkbox"] {
+    position: absolute;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+}
+
+ul.gallery_list li a {
+    display: block;
+    margin: 10px 10px 30px;
+    font-size: 14px;
+}
+
+ul.gallery_list li .image {
+    position: relative;
+    padding: 0 !important;
+    margin: 0;
+}
+
+ul.gallery_list li .image i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+}
+
+ul.gallery_list li img {
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+ul.gallery_list.list02 li {
+    width: calc(100% / 2);
+}
+
+ul.gallery_list.list03 li {
+    width: calc(100% / 3);
+}
+
+ul.gallery_list.list04 li {
+    width: calc(100% / 4);
+}
+
+ul.gallery_list.list05 li {
+    width: calc(100% / 5);
+}
+
+ul.gallery_list.list02 li .image {
+    width: 380px;
+    height: 380px;
+}
+
+ul.gallery_list.list03 li .image {
+    width: 246.66px;
+    height: 246.66px;
+}
+
+ul.gallery_list.list04 li .image {
+    width: 180px;
+    height: 180px;
+}
+
+ul.gallery_list.list05 li .image {
+    width: 140px;
+    height: 140px;
+}
+
+ul.gallery_list li h3 {
+    font-weight: 400;
+    font-size: 14px !important;
+    margin: 10px 0 8px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul.gallery_list li p.name {
+    text-align: center;
+    margin: 0 0 4px;
+    font-weight: 600;
+}
+
+ul.gallery_list li a>i {
+    display: block;
+    font-style: normal;
+    text-align: center;
+    font-size: 12px;
+    color: #3366cc;
 }
