@@ -5813,3 +5813,245 @@ ul.gallery_list li a>i {
     font-size: 12px;
     color: #3366cc;
 }
+
+#header.company{
+	border-bottom:1px solid #ccc;
+}
+#header.company h1{
+	margin:1.125em 0 0 0;
+	text-align:center;
+}
+#header.company p.subject{
+	margin:5px 0 0 0;
+}
+#header.company p.subject a.inter{
+	float:right;
+	font-weight:bold;
+	text-align:right;
+}
+#header.company p.favorite a{
+	display:inline-block;
+	height:32px;
+	padding-left:76px; 
+	background:url('../images/small-logo.png') no-repeat left 3px;
+}
+
+article#content.sub section.company-content{
+	width:100%;
+	height:98px;
+	background:#f8f8f8;
+	border:1px solid #ccc;
+	margin:16px 0 50px 0;
+}
+article#content.sub section.company-content p{
+	font-size:14px;
+	font-weight:bold;
+	margin:0 0 10px 0;
+}
+article#content.sub section.company-content div.info-left{
+	display:inline-block;
+	width:476px;
+	height:inherit;
+	border-right:1px solid #ccc;
+	padding:15px;
+}
+article#content.sub section.company-content div.info-left span{
+	display:inline-block;
+	margin-bottom:5px;
+	color:#555;
+}
+article#content.sub section.company-content div.info-right{
+	display:inline-block;
+	padding:15px;
+	height:inherit;
+}
+article#content.sub section.company-content div.info-right ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+article#content.sub section.company-content div.info-right ul li{
+	position:relative;
+	padding-left:10px;
+	margin-bottom:5px;
+	color:#555;
+}
+article#content.sub section.company-content div.info-right ul li:before{
+	content:'·';
+	display:inline-block;
+	position:absolute;
+	top:0;
+	left:3px;
+}
+#content.sub section > h2 {
+    position: relative;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+#content.sub section h2 small {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-weight: 200;
+    font-size: 0;
+}
+
+#content.sub section h2 small i {
+    font-size: 20px;
+    color: #aaa;
+}
+#content.sub section.main-popular{
+    font-size: 0;
+    margin-top: 30px;
+}
+#content.sub section.main-popular ul {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#content.sub section.main-popular li {
+    display: inline-block;
+    border: 1px solid #eee;
+    width: calc((100% - 40px) / 3);
+    margin: 0 20px 20px 0;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+#content.sub section.main-popular li:nth-child(3n) {
+    margin: 0 0 20px 0;
+}
+
+#content.sub section.main-popular .images {
+    height: 180px;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+#content.sub section.main-popular p {
+    margin: 0;
+    line-height: 1.4;
+    padding: 0 10px;
+    color: #333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#content.sub section.main-popular .images img {
+    width: 251px;
+    height: 228px;
+    margin-top: -24px;
+}
+
+#content.sub section.main-popular p.name {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+#content.sub section.main-popular p.company {
+    font-weight: 600;
+}
+
+#content.sub section.main-popular p.price {
+    font-weight: 600;
+    font-size: 16px;
+    color: #cb3030;
+}
+
+#content.sub section.main-popular p.price del {
+    font-size: 14px;
+    color: #555;
+    font-weight: 400;
+}
+
+aside#sidebar-company {
+    position: relative;
+    width: 1px;
+    height: 1px;
+    top: 17px;
+    left: 50%;
+    margin-left: -530px;
+}
+
+aside#sidebar-company .container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+	padding:15px;
+	background:#333;
+}
+
+aside#sidebar-company ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+aside#sidebar-company ul li a{
+	color:#fff;
+}
+
+aside#sidebar-company ul h4 {
+    margin: 0 0 10px 0;
+}
+aside#sidebar-company ul li ul li{
+	position:relative;
+	margin-bottom:3px;
+	padding-left:15px;
+}
+aside#sidebar-company ul li ul li::before{
+	content:'-';
+	display:inline-block;
+	position:absolute;
+	top:0;
+	left:5px;
+	color:#fff;
+}
+aside#sidebar-company ul li ul li:last-child{
+	padding:0;
+	margin:20px 0 40px ;
+}
+aside#sidebar-company ul li ul li:last-child::before{
+	display:none;
+}
+aside#sidebar-company .container div{
+	position:relative;
+	display:inline-block;
+}
+aside#sidebar-company .container div input[type="text"]{
+	width:100%;
+	height:35px;
+	padding:5px;
+}
+aside#sidebar-company .container div a{
+	position:absolute;
+	display:inline-block;
+	top:5px;
+	right:7px;
+}
+aside#sidebar-company .container div a i{
+	font-size:1.750em;
+}
+aside#sidebar-company .container.info{
+	top:250px;
+	background:#fff;
+	border:1px solid #ccc;
+	padding:0 10px;
+}
+aside#sidebar-company .container.info ul li{
+	font-size:14px;
+	color:#666;
+	line-height:1.4;
+	letter-spacing:-1px;
+}
+aside#sidebar-company .container.info p{
+	font-size:14px;
+	line-height:1.4;
+	color:#666;
+}
