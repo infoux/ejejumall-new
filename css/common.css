@@ -630,11 +630,11 @@ a:hover {
     overflow: hidden;
 }
 
-#content.main section.main-issue p.images {
+#content.main section.main-issue div.images {
     padding: 28px 0 6px;
 }
 
-#content.main section.main-issue p.images img {
+#content.main section.main-issue div.images img {
     width: 90px;
     height: 90px;
 }
@@ -1100,6 +1100,7 @@ a:hover {
 }
 
 #content.main section.main-popular .images {
+	position:relative;
     height: 180px;
     overflow: hidden;
     border-bottom: 1px solid #eee;
@@ -1107,7 +1108,7 @@ a:hover {
     padding: 0;
 }
 
-#content.main section.main-popular p {
+#content.main section.main-popular p{
     margin: 0;
     line-height: 1.4;
     padding: 0 10px;
@@ -5974,6 +5975,70 @@ article#content.sub section.company-content div.info-right ul li:before{
     font-size: 14px;
     color: #555;
     font-weight: 400;
+}
+
+#content div.icons{
+	position:absolute;
+	display:block;
+	bottom:2px;
+	top:auto;
+	right:14px;
+	text-align:right;
+	overflow:visible;
+	font-size:0;
+	z-index:400;
+}
+#content div.icons i{
+	display:inline-block;
+	height:16px;
+	line-height:16px;
+	margin:1px;
+	font-style:normal;
+	font-size:12px;
+	padding:0 4px;
+	color:#fff;
+}
+#content div.icons i.type01{
+	background:#ff0202;
+}
+#content div.icons i.type02{
+	background:#70309e;
+}
+#content div.icons i.type03{
+	background:#febf00;
+}
+#content div.icons i.type04{
+	background:#70309e;
+}
+#content div.icons i.type05{
+	background:#8596b0;
+}
+#content div.icons i.type06{
+	background:#b14507;
+}
+#content div.icons i.type07{
+	background:#febf00;
+}
+#content div.icons i.type08{
+	background:#fe0000;
+}
+#content div.icons i.type09{
+	background:#ff0101;
+}
+#content div.icons i.type10{
+	background:##b44307;
+}
+#content div.icons i.type11{
+	background:#ffbe00;
+}
+#content div.icons i.type12{
+	background:#f5bf16;
+}
+#content div.icons i.type13{
+	background:#ff0202;
+}
+#content div.icons i.type14{
+	background:#7131a3;
 }
 
 aside#sidebar-company {
