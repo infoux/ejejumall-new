@@ -1298,7 +1298,7 @@ a:hover {
     position: relative;
     font-size: 16px;
     font-weight: 600;
-    margin: 10px 0 4px;
+    margin: 10px 0 10px;
 }
 
 #content.main section.main-customer h3 strong {
@@ -1321,6 +1321,15 @@ a:hover {
 
 #content.main section.main-customer h3 small i {
     color: #999;
+}
+
+#content.main section.main-customer h3.set2 {
+  margin-top:20px;
+}
+
+
+#content.main section.main-customer h3.set2 strong {
+    color:#887042;
 }
 
 #content.main section.main-customer p {
