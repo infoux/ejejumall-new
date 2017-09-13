@@ -1407,6 +1407,8 @@ a:hover {
 
 #content.sub .list-top h2 {
     font-size: 28px;
+    padding: 0 320px 0 0;
+    line-height: 1.4;
 }
 
 #content.sub .list-top h2 small {
